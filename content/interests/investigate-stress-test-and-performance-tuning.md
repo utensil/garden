@@ -1,0 +1,20 @@
+---
+title: "Investigate stress test and performance tuning"
+date: 2015-01-23
+tags: [interest]
+aliases: [uts-0139]
+source: "https://utensil.github.io/forest/uts-0139/"
+---
+
+- http://people.seas.harvard.edu/~apw/stress/
+- http://kernel.ubuntu.com/~cking/stress-ng/
+
+
+#### [utensil](https://github.com/utensil) commented at [2016-02-25 03:02](https://github.com/utensil/utensil.github.io/issues/29#issuecomment-188579183):
+
+- http://linux.die.net/man/1/pidstat
+- http://unix.stackexchange.com/a/84345/145128
+- http://www.thegeekstuff.com/2011/03/linux-performance-monitoring-intro/
+- https://criticalblue.com/news/wp-content/uploads/2013/12/linux_scheduler_notes_final.pdf
+- http://blog.tsunanet.net/2010/11/how-long-does-it-take-to-make-context.html
+- http://www.cnblogs.com/mindwind/p/5946586.html
