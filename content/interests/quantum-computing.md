@@ -1,0 +1,21 @@
+---
+title: "Quantum Computing"
+date: 2016-05-09
+tags: [interest]
+aliases: [uts-0094]
+source: "https://utensil.github.io/forest/uts-0094/"
+---
+
+- https://quantumexperience.ng.bluemix.net/qstage/#/tutorial?sectionId=c59b3710b928891a1420190148a72cce
+- https://www.quora.com/What-are-the-best-books-to-start-learning-about-Quantum-Computing
+
+
+#### [utensil](https://github.com/utensil) commented at [2016-05-10 15:03](https://github.com/utensil/utensil.github.io/issues/76#issuecomment-218186201):
+
+![image](https://cloud.githubusercontent.com/assets/64258/15151110/68d0705a-1702-11e6-90f6-1f6ac4731a15.png)
+
+![image](https://cloud.githubusercontent.com/assets/64258/15151121/7a94c71e-1702-11e6-945b-a64d7276e21b.png)
+
+![image](https://cloud.githubusercontent.com/assets/64258/15151444/b5ff13c6-1703-11e6-98c9-3022265ecb04.png)
+
+![image](https://cloud.githubusercontent.com/assets/64258/15151376/6d5a47e4-1703-11e6-963a-4dc544819550.png)
