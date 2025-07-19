@@ -18,10 +18,16 @@
     fill: var(--darkgray);
     stroke: var(--darkgray);
     transition: opacity 0.1s ease;
+    opacity: 1;
   }
 }
 
 :root[reader-mode="on"] {
+
+  & svg {
+    opacity: 0.5;
+  }
+
   & .sidebar.left,
   & .sidebar.right {
     opacity: 0;
