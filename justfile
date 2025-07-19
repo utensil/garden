@@ -17,7 +17,7 @@ init:
     npx quartz sync --no-pull
 
 dev:
-    watchexec --restart -w quartz.config.ts -- npx quartz build --serve
+    watchexec --restart -w quartz.config.ts -w quartz.layout.ts -- npx quartz build --serve
 
 sync:
     jj bs v4 -r @- && jj psb v4
