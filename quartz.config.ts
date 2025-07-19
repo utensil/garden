@@ -2,13 +2,15 @@ import { QuartzConfig } from "./quartz/cfg"
 import * as Plugin from "./quartz/plugins"
 
 /**
- * Quartz 4 Configuration
- *
- * See https://quartz.jzhao.xyz/configuration for more information.
+ Quartz 4 Configuration
+
+ See https://quartz.jzhao.xyz/configuration for more information.
 
  Fonts and colors are inspired by
 
  - https://notes.asterhu.com/
+ - https://utensil.github.io/forest/
+
  */
 const config: QuartzConfig = {
   configuration: {
@@ -45,11 +47,11 @@ const config: QuartzConfig = {
           textHighlight: "#fff23688",
         },
         darkMode: {
-          light: "#161618", // light: "#4b4a4a", // default: #161618
+          light: "#151a1f", // light: "#4b4a4a", // default: #161618
           lightgray: "#393639", // lightgray: "#6d6c6c", // default: #393639
           gray: "#646464", // default: #646464
           darkgray: "#d4d4d4", // default: #d4d4d4
-          dark: "#ebebec", // default: #ebebec
+          dark: "#cbd1db", // default: #ebebec
           secondary: "#9dccd0", // default: #7b97aa
           tertiary: "#f1b3b3", // default: #84a59d
           quaternary: "#75b499", // added
