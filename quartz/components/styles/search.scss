@@ -25,6 +25,10 @@
     /* width: 100%; */
     justify-content: space-between;
 
+    &:focus {
+      outline: 0;
+    }
+
     &>p {
       /* display: inline; */
       /* padding: 0 1rem; */
