@@ -39,6 +39,10 @@ export const defaultContentPageLayout: PageLayout = {
         },
       ],
     }),
+    Component.ConditionalRender({
+      component: Component.RecentNotes(),
+      condition: (page) => page.fileData.slug === "index",
+    }),
     Component.MobileOnly(Component.Explorer()),
     Component.DesktopOnly(Component.TableOfContents()),
   ],
