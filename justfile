@@ -18,3 +18,6 @@ init:
 
 dev:
     npx quartz build --serve
+
+sync:
+    jj bs v4 -r @- && jj psb v4
