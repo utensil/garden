@@ -1,6 +1,7 @@
 ---
 title: My Day 1 with jj (Jujutsu)
 date: 2025-07-09
+tag: post
 ---
 
 > Discuss on [/r/git](https://www.reddit.com/r/git/comments/1lvbzo8/my_day_1_with_jj_jujutsu/) and [Bluesky](https://bsky.app/profile/iutensil.bsky.social/post/3ltnz23tp2k2z)
