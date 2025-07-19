@@ -9,7 +9,7 @@ export const sharedPageComponents: SharedLayout = {
   footer: Component.Footer({
     links: {
       // GitHub: "https://github.com/jackyzha0/quartz",
-      GitHub: "https://github.com/utensil/quartz",
+      Source: "https://github.com/utensil/quartz",
       // "Discord Community": "https://discord.gg/cRFFHYye7t",
     },
   }),
@@ -39,12 +39,13 @@ export const defaultContentPageLayout: PageLayout = {
         },
       ],
     }),
-    // Component.Explorer(),
+    Component.MobileOnly(Component.Explorer()),
     Component.DesktopOnly(Component.TableOfContents()),
   ],
   right: [
-    Component.Graph(),
     Component.Backlinks(),
+    Component.Graph(),
+    Component.DesktopOnly(Component.Explorer()),
   ],
 }
 
@@ -52,18 +53,20 @@ export const defaultContentPageLayout: PageLayout = {
 export const defaultListPageLayout: PageLayout = {
   beforeBody: [Component.Breadcrumbs(), Component.ArticleTitle(), Component.ContentMeta()],
   left: [
-    Component.PageTitle(),
+    // Component.PageTitle(),
     Component.MobileOnly(Component.Spacer()),
     Component.Flex({
       components: [
         {
           Component: Component.Search(),
-          grow: true,
+          // grow: true,
         },
         { Component: Component.Darkmode() },
       ],
     }),
-    Component.Explorer(),
+    Component.MobileOnly(Component.Explorer()),
   ],
-  right: [],
+  right: [
+    Component.DesktopOnly(Component.Explorer()),
+  ],
 }
