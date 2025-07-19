@@ -13,10 +13,12 @@ export const sharedPageComponents: SharedLayout = {
             component: Component.RecentNotes({
               title: "Recent posts",
               limit: 5,
-              filter: (f) => f.slug !== "index" && /^posts/.test(f.relativePath ?? '')
+              filter: (f) => f.slug !== "index" && (f.frontmatter?.tags?.includes("post") ?? false),
+              showTags: false
             }),
             condition: (page) => page.fileData.slug === "index",
           }),
+          align: "start",
           grow: true
         },
         {
@@ -24,7 +26,7 @@ export const sharedPageComponents: SharedLayout = {
             component: Component.RecentNotes({
               title: "Recent notes",
               limit: 5,
-              filter: (f) => f.slug !== "index" && (f.frontmatter?.tags?.includes("notes") ?? false)
+              filter: (f) => f.slug !== "index" && !f.frontmatter?.tags?.includes("post")
             }),
             condition: (page) => page.fileData.slug === "index",
           }),
