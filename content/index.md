@@ -1,6 +1,5 @@
 ---
-title: Welcome to Quartz
+title: Welcome to Utensil's Quartz Garden
 ---
 
-This is a blank Quartz installation.
-See the [documentation](https://quartz.jzhao.xyz) for how to get started.
+I'm still gardening. In the meanwhile, please visit [my forest](https://utensil.github.io/forest).

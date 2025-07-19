@@ -1,4 +1,5 @@
-let isReaderMode = false
+// let isReaderMode = false
+let isReaderMode = true
 
 const emitReaderModeChangeEvent = (mode: "on" | "off") => {
   const event: CustomEventMap["readermodechange"] = new CustomEvent("readermodechange", {

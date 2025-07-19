@@ -5,10 +5,14 @@ import * as Plugin from "./quartz/plugins"
  * Quartz 4 Configuration
  *
  * See https://quartz.jzhao.xyz/configuration for more information.
+
+ Fonts and colors are inspired by
+
+ - https://notes.asterhu.com/
  */
 const config: QuartzConfig = {
   configuration: {
-    pageTitle: "Quartz 4",
+    pageTitle: "Utensil's Quartz Garden",
     pageTitleSuffix: "",
     enableSPA: true,
     enablePopovers: true,
@@ -16,38 +20,40 @@ const config: QuartzConfig = {
       provider: "plausible",
     },
     locale: "en-US",
-    baseUrl: "quartz.jzhao.xyz",
+    baseUrl: "utensil.github.io/quartz/",
     ignorePatterns: ["private", "templates", ".obsidian"],
     defaultDateType: "modified",
     theme: {
       fontOrigin: "googleFonts",
       cdnCaching: true,
       typography: {
-        header: "Schibsted Grotesk",
-        body: "Source Sans Pro",
-        code: "IBM Plex Mono",
+        header: "Droid Sans Bold", // default: Schibsted Grotesk
+        body: "Roboto Slab", // default: Source Sans Pro
+        code: "Hack", // default: IBM Plex Mono
       },
       colors: {
         lightMode: {
-          light: "#faf8f8",
-          lightgray: "#e5e5e5",
-          gray: "#b8b8b8",
-          darkgray: "#4e4e4e",
-          dark: "#2b2b2b",
-          secondary: "#284b63",
-          tertiary: "#84a59d",
-          highlight: "rgba(143, 159, 169, 0.15)",
+          light: "#fffcf9", // default: #faf8f8
+          lightgray: "#f4eae2", // default: #e5e5e5
+          gray: "#e0d4c3", // default: #b8b8b8
+          darkgray: "#4e4e4e", // darkgray: "#918078", // default: #4e4e4e
+          dark: "#2b2b2b", // dark: "#675c51", // default: #2b2b2b
+          secondary: "#75b0b4", // default: #284b63
+          tertiary: "#da8d8d", // default: #84a59d
+          quaternary: "#75b499", // added
+          highlight: "#8f9fa926", // default: rgba(143, 159, 169, 0.15)
           textHighlight: "#fff23688",
         },
         darkMode: {
-          light: "#161618",
-          lightgray: "#393639",
-          gray: "#646464",
-          darkgray: "#d4d4d4",
-          dark: "#ebebec",
-          secondary: "#7b97aa",
-          tertiary: "#84a59d",
-          highlight: "rgba(143, 159, 169, 0.15)",
+          light: "#161618", // light: "#4b4a4a", // default: #161618
+          lightgray: "#393639", // lightgray: "#6d6c6c", // default: #393639
+          gray: "#646464", // default: #646464
+          darkgray: "#d4d4d4", // default: #d4d4d4
+          dark: "#ebebec", // default: #ebebec
+          secondary: "#9dccd0", // default: #7b97aa
+          tertiary: "#f1b3b3", // default: #84a59d
+          quaternary: "#75b499", // added
+          highlight: "#8f9fa940", // default: rgba(143, 159, 169, 0.15)
           textHighlight: "#b3aa0288",
         },
       },
