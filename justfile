@@ -15,3 +15,6 @@ init:
     git remote add upstream https://github.com/jackyzha0/quartz.git || true
     git remote -v
     npx quartz sync --no-pull
+
+dev:
+    npx quartz build --serve
