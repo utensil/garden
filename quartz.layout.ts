@@ -5,7 +5,35 @@ import * as Component from "./quartz/components"
 export const sharedPageComponents: SharedLayout = {
   head: Component.Head(),
   header: [],
-  afterBody: [],
+  afterBody: [
+    Component.Flex({
+      components: [
+        {
+          Component: Component.ConditionalRender({
+            component: Component.RecentNotes({
+              title: "Recent posts",
+              limit: 5,
+              filter: (f) => f.slug !== "index" && /^posts/.test(f.relativePath ?? '')
+            }),
+            condition: (page) => page.fileData.slug === "index",
+          }),
+          grow: true
+        },
+        {
+          Component: Component.ConditionalRender({
+            component: Component.RecentNotes({
+              title: "Recent notes",
+              limit: 5,
+              filter: (f) => f.slug !== "index" && (f.frontmatter?.tags?.includes("notes") ?? false)
+            }),
+            condition: (page) => page.fileData.slug === "index",
+          }),
+          align: "start",
+          grow: true
+        },
+      ]
+    })
+  ],
   footer: Component.Footer({
     links: {
       // GitHub: "https://github.com/jackyzha0/quartz",
@@ -38,10 +66,6 @@ export const defaultContentPageLayout: PageLayout = {
           // grow: true,
         },
       ],
-    }),
-    Component.ConditionalRender({
-      component: Component.RecentNotes(),
-      condition: (page) => page.fileData.slug === "index",
     }),
     Component.MobileOnly(Component.Explorer()),
     Component.DesktopOnly(Component.TableOfContents()),
