@@ -30,32 +30,20 @@ Enhance the G-task golden rule in AGENTS.md to improve agent workflow and knowle
 
 ## Execution Notes
 
-### Key Findings During Task
-- **Original Issue**: Noticed task-1 execution notes were missing important reference material (forest repo URL)
-- **Root Cause**: G-task rule didn't explicitly require documenting reference materials provided by user
-- **Solution**: Enhanced G-task rule to require comprehensive execution documentation
+### What Was Done
+- Enhanced G-task rule in AGENTS.md to require execution notes on completed tasks
+- Made rule more concise (60% shorter) while keeping all essential requirements
+- Fixed issue where agents weren't documenting reference materials provided by user
 
-### Implementation Approach
-1. **First Enhancement**: Added execution notes requirement to G-task rule
-2. **Second Enhancement**: Clarified to include "URLs, files, or external resources provided during task execution"
-3. **Final Enhancement**: Made rule more concise while preserving all vital information
+### Key Changes
+- Added execution notes requirement with 6 elements: findings, references, approach, files, gotchas
+- Clarified "reference materials" includes URLs/files provided during execution
+- Streamlined verbose explanations to essential points
 
 ### Files Modified
-- `/Users/utensil/projects/garden/AGENTS.md` - Enhanced G-task golden rule (3 separate commits)
-- Reduced G-task rule verbosity by ~60% while maintaining all essential requirements
+- `AGENTS.md` - G-task golden rule (3 commits)
 
-### Reference Materials Used
-- **Task-1 Example**: Used completed task-1 as reference for what execution notes should contain
-- **User Feedback**: Applied specific guidance about documenting provided reference materials
-
-### Key Changes Made
-- **Added**: Requirement to document execution notes with 6 key elements
-- **Clarified**: Must include reference materials provided during execution
-- **Streamlined**: Condensed verbose explanations to essential points
-- **Preserved**: All vital requirements and constraints
-
-### Gotchas for Future Tasks
-- **Execution Notes Timing**: Must be added immediately after marking task Done, not before
-- **Reference Material Priority**: Always document URLs/files provided by user, not just discovered materials
-- **Conciseness Balance**: Keep rules brief but don't lose critical requirements
-- **G-task Self-Application**: This task itself demonstrates the execution notes pattern
+### For Future Tasks
+- Add execution notes immediately after marking task Done
+- Always document URLs/files provided by user
+- Keep execution notes concise but comprehensive

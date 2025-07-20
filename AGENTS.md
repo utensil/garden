@@ -52,7 +52,7 @@ ALWAYS cite the rules which you are following at the end of your reply, like thi
 
 - ✅ **Should**: Use `backlog` commands with `--plain` flag per `for-llm/backlog.md` when working on backlog tasks
 - ✅ **Should**: Complete Definition of Done checklist before marking tasks Done
-- ✅ **Should**: Add execution notes to completed tasks: key findings, reference materials (URLs/files provided), implementation approach, files modified, gotchas for future tasks
+- ✅ **Should**: Add concise execution notes to completed tasks: what was done, key changes, files modified, gotchas for future tasks
 - ❌ **Must NOT**: Implement beyond acceptance criteria without updating task first
 - ❌ **Must NOT**: Use backlog when not working on backlog-managed tasks
 
