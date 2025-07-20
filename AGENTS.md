@@ -50,10 +50,10 @@ ALWAYS cite the rules which you are following at the end of your reply, like thi
 
 ### G-task: Follow backlog workflow for structured tasks
 
-- ✅ **Should**: Use `backlog` commands with `--plain` flag according to `for-llm/backlog.md` to learn about and manage task if you are told to work on a backlog task (e.g. you are given only a task number withou further context)
-- ✅ **Should**: Complete full Definition of Done checklist before marking tasks as Done
-- ✅ **Should**: When completing a backlog task, add execution notes back to the task including: key findings during execution, extra context discovered, important instructions learned, reference materials used (including any URLs, files, or external resources provided during task execution), implementation approach taken, files modified, and any gotchas/limitations for future tasks
-- ❌ **Must NOT**: Implement beyond acceptance criteria without updating the task first
+- ✅ **Should**: Use `backlog` commands with `--plain` flag per `for-llm/backlog.md` when working on backlog tasks
+- ✅ **Should**: Complete Definition of Done checklist before marking tasks Done
+- ✅ **Should**: Add execution notes to completed tasks: key findings, reference materials (URLs/files provided), implementation approach, files modified, gotchas for future tasks
+- ❌ **Must NOT**: Implement beyond acceptance criteria without updating task first
 - ❌ **Must NOT**: Use backlog when not working on backlog-managed tasks
 
 ### G-search: Prefer ast-grep for syntax-aware search, with ripgrep as fallback
