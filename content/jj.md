@@ -1,5 +1,5 @@
 ---
-title: My Day 1 with jj (Jujutsu)
+title: My day 1 with jj (Jujutsu)
 date: 2025-07-09
 tag: post
 ---

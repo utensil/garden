@@ -1,16 +1,9 @@
 ---
-title: Iframe
-tags: component
-iframe: https://example.com
-iframe-style:
-  height: 300px
-  border: 2px solid #3498db
-  borderRadius: 8px
+title: iframe
+tags: feature/component
 ---
 
 Quartz can embed external content using iframes based on a frontmatter property. You can add it to any layout by using `Component.Iframe` in `quartz.layout.ts`.
-
-This page demonstrates the Iframe component. The iframe above should be displaying content from example.com with a custom height of 300px and a blue border.
 
 ## Features
 
