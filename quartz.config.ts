@@ -18,9 +18,9 @@ const config: QuartzConfig = {
     pageTitleSuffix: "",
     enableSPA: true,
     enablePopovers: true,
-    analytics: {
-      provider: "plausible",
-    },
+    // analytics: {
+    //   provider: "plausible",
+    // },
     locale: "en-US",
     baseUrl: "utensil.github.io/garden/",
     ignorePatterns: ["private", "templates", ".obsidian"],
