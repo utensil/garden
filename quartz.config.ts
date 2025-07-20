@@ -14,7 +14,7 @@ import * as Plugin from "./quartz/plugins"
  */
 const config: QuartzConfig = {
   configuration: {
-    pageTitle: "Utensil's Quartz Garden",
+    pageTitle: "Utensil's Digital Garden",
     pageTitleSuffix: "",
     enableSPA: true,
     enablePopovers: true,
@@ -22,7 +22,7 @@ const config: QuartzConfig = {
       provider: "plausible",
     },
     locale: "en-US",
-    baseUrl: "utensil.github.io/quartz/",
+    baseUrl: "utensil.github.io/garden/",
     ignorePatterns: ["private", "templates", ".obsidian"],
     defaultDateType: "modified",
     theme: {

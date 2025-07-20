@@ -1,5 +1,5 @@
 ---
-title: Welcome to Utensil's Quartz Garden
+title: Welcome to Utensil's Digital Garden
 date: 2025-07-19
 ---
 
