@@ -14,7 +14,7 @@ export const sharedPageComponents: SharedLayout = {
             Component: Component.RecentNotes({
                 title: "Recent posts",
                 limit: 5,
-                filter: (f) => f.slug !== "index" && (f.frontmatter?.tags?.includes("post") ?? false),
+                filter: (f) => f.frontmatter?.tags?.includes("post") ?? false,
                 showTags: false
             }),
             align: "start",
@@ -24,7 +24,7 @@ export const sharedPageComponents: SharedLayout = {
             Component: Component.RecentNotes({
                 title: "Recent notes",
                 limit: 5,
-                filter: (f) => f.slug !== "index" && !f.frontmatter?.tags?.includes("post")
+                filter: (f) => !/index$/.test(f.slug ?? "") && !f.frontmatter?.tags?.includes("post")
               }),
             align: "start",
             grow: true
