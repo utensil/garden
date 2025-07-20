@@ -16,6 +16,9 @@ init:
     git remote -v
     npx quartz sync --no-pull
 
+build:
+    npx quartz build
+
 dev:
     watchexec --restart -w quartz.config.ts -w quartz.layout.ts -w content -- npx quartz build --serve
 
