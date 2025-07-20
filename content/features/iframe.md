@@ -1,6 +1,6 @@
 ---
 title: iframe
-tags: feature/component
+tag: features/component
 ---
 
 Quartz can embed external content using iframes based on a frontmatter property. You can add it to any layout by using `Component.Iframe` in `quartz.layout.ts`.
@@ -12,8 +12,11 @@ Quartz can embed external content using iframes based on a frontmatter property.
 - Provides a convenient "open in new tab" button
 - Responsive design that works on all screen sizes
 - Supports custom styling through the `iframe-style` frontmatter property
+- Can be configured via component options or frontmatter
 
 ## Usage
+
+### Via Frontmatter
 
 Add an `iframe` property to your frontmatter with the URL you want to embed:
 
@@ -26,7 +29,29 @@ iframe: https://example.com
 
 The component will automatically render an iframe with the specified URL, along with a header showing the URL and an external link icon to open the content in a new tab.
 
-### Custom Styling
+### Via Component Options
+
+When adding the component to your layout, you can specify the source URL and styles directly:
+
+```typescript
+Component.Iframe({
+  src: "https://example.com",
+  style: {
+    height: "400px",
+    border: "1px solid red"
+  }
+})
+```
+
+This is useful when you want to embed a specific iframe in a layout regardless of the page content.
+
+### Priority Order
+
+When both component options and frontmatter properties are provided:
+1. Component options take precedence over frontmatter
+2. Frontmatter values are used as fallbacks if component options are not provided
+
+## Custom Styling
 
 You can customize the styling of the iframe by adding an `iframe-style` property to your frontmatter:
 

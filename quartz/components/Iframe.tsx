@@ -3,22 +3,32 @@ import style from "./styles/iframe.scss"
 import { classNames } from "../util/lang"
 
 interface Options {
-  // No options needed for now, but could add height, etc. in the future
+  src?: string
+  style?: Record<string, string | number>
 }
 
 export default ((userOpts?: Partial<Options>) => {
+  const opts = userOpts || {}
+  
   const Iframe: QuartzComponent = ({
     fileData,
     displayClass,
   }: QuartzComponentProps) => {
-    const iframeSrc = fileData.frontmatter?.iframe
+    // Use options src if provided, otherwise fall back to frontmatter
+    const iframeSrc = opts.src || fileData.frontmatter?.iframe
     
-    // Handle iframe-style as either an object or a string
+    // Handle iframe-style from options and frontmatter
     let iframeStyle = {}
-    const customStyle = fileData.frontmatter?.["iframe-style"]
     
-    if (customStyle && typeof customStyle === 'object') {
-      iframeStyle = customStyle
+    // First check frontmatter for styles
+    const frontmatterStyle = fileData.frontmatter?.["iframe-style"]
+    if (frontmatterStyle && typeof frontmatterStyle === 'object') {
+      iframeStyle = { ...iframeStyle, ...frontmatterStyle }
+    }
+    
+    // Then apply options styles (these take precedence)
+    if (opts.style && typeof opts.style === 'object') {
+      iframeStyle = { ...iframeStyle, ...opts.style }
     }
     
     if (!iframeSrc) {
