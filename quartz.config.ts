@@ -80,6 +80,7 @@ const config: QuartzConfig = {
       Plugin.CrawlLinks({ markdownLinkResolution: "shortest" }),
       Plugin.Description(),
       Plugin.Latex({ renderEngine: "katex" }),
+      Plugin.IframeEmbed(),
     ],
     filters: [Plugin.RemoveDrafts()],
     emitters: [
