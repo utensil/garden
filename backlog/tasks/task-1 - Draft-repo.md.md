@@ -15,45 +15,23 @@ Use your tools to learn about what is this repo about, and draft for-llm/repo.md
 
 ## Execution Notes
 
-### Key Findings During Task
-- **Repository Type**: Quartz v4-based digital garden (static site generator)
-- **Version Control**: Uses Jujutsu (`jj`) instead of git - critical for agents to know
-- **Task Management**: Structured backlog system with CLI tool (`backlog task edit`, etc.)
-- **Build System**: `just` commands for workflow, npm scripts for development
-- **Technology Stack**: TypeScript + Preact + Node.js >=22 + npm >=10.9.2
+### What Was Done
+- Created comprehensive for-llm/repo.md documentation for AI agents
+- Analyzed repository structure (Quartz v4 digital garden) and technology stack
+- Applied forest repository structure patterns from https://github.com/utensil/forest/raw/refs/heads/main/for-llm/repo.md
+- Enhanced documentation with tables, code examples, and common pitfalls
 
-### Reference Structure Analysis
-- **Primary Reference**: Analyzed forest repository's for-llm/repo.md structure via WebFetch from https://github.com/utensil/forest/raw/refs/heads/main/for-llm/repo.md
-- Applied hierarchical organization patterns: general→specific, setup→usage→advanced
-- Adopted table-based project layout with emojis for visual clarity
-- Learned structural patterns: command reference sections, directory tables, clear subsection hierarchy
-- Included comprehensive "Common Pitfalls" section to prevent errors
-- Added code pattern references for quick lookup
-- **Key Insight**: Forest repo used consistent header hierarchy, code blocks for commands, tables for structured info
-
-### AGENTS.md Compliance
-- Followed sections mentioned in AGENTS.md requirements
-- Added build commands section (G-verify compliance)
-- Included code area boundaries (G-scope compliance)  
-- Added coding standards (G-lint compliance)
-- Structured for agent workflow support
-
-### Extra Context for Future Tasks
-- **Performance Note**: CustomOgImages plugin slows builds significantly
-- **Memory Requirements**: Large sites may need Node.js memory limit increases
-- **Hot Reload Limitation**: Config file changes require full restart
-- **Plugin Order**: Matters in quartz.config.ts - affects content processing
-- **Content Linking**: Wikilinks are case-sensitive, must match exact page titles
-
-### Implementation Approach
-1. Created comprehensive project overview table for quick reference
-2. Added backlog CLI commands section for task management integration
-3. Structured project layout table with directory purposes and emojis
-4. Expanded common pitfalls based on Quartz-specific issues
-5. Added digital garden specific guidance (wikilinks, graph features)
-6. Included code patterns and configuration examples
+### Key Changes
+- Added project overview table with key properties
+- Included backlog CLI commands and project layout with emojis
+- Added comprehensive common pitfalls section and code pattern references
+- Included digital garden specific guidance (wikilinks, graph features)
 
 ### Files Modified
-- Created `/Users/utensil/projects/garden/for-llm/repo.md` (240 lines)
-- Enhanced structure based on forest repository patterns
-- Committed with proper [AGENT] tag following G-commit guidelines
+- Created `for-llm/repo.md` (240 lines) with complete agent onboarding guide
+
+### For Future Tasks
+- CustomOgImages plugin slows builds significantly
+- Config file changes require full restart (not hot reload)
+- Wikilinks are case-sensitive and must match exact page titles
+- Use `jj` for version control, not git
