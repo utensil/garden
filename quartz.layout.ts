@@ -6,34 +6,31 @@ export const sharedPageComponents: SharedLayout = {
   head: Component.Head(),
   header: [],
   afterBody: [
-    Component.Flex({
-      components: [
-        {
-          Component: Component.ConditionalRender({
-            component: Component.RecentNotes({
-              title: "Recent posts",
-              limit: 5,
-              filter: (f) => f.slug !== "index" && (f.frontmatter?.tags?.includes("post") ?? false),
-              showTags: false
+    Component.ConditionalRender({
+      condition: (page) => page.fileData.slug === "index",
+      component: Component.Flex({
+        components: [
+          {
+            Component: Component.RecentNotes({
+                title: "Recent posts",
+                limit: 5,
+                filter: (f) => f.slug !== "index" && (f.frontmatter?.tags?.includes("post") ?? false),
+                showTags: false
             }),
-            condition: (page) => page.fileData.slug === "index",
-          }),
-          align: "start",
-          grow: true
-        },
-        {
-          Component: Component.ConditionalRender({
-            component: Component.RecentNotes({
-              title: "Recent notes",
-              limit: 5,
-              filter: (f) => f.slug !== "index" && !f.frontmatter?.tags?.includes("post")
-            }),
-            condition: (page) => page.fileData.slug === "index",
-          }),
-          align: "start",
-          grow: true
-        },
-      ]
+            align: "start",
+            grow: true
+          },
+          {
+            Component: Component.RecentNotes({
+                title: "Recent notes",
+                limit: 5,
+                filter: (f) => f.slug !== "index" && !f.frontmatter?.tags?.includes("post")
+              }),
+            align: "start",
+            grow: true
+          },
+        ]
+      })
     })
   ],
   footer: Component.Footer({
