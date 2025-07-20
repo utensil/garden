@@ -42,8 +42,13 @@
 
   iframe {
     width: 100%;
+    /* Ensure no scroll for most pages */
     height: 200vh;
     border: 0;
     display: block;
+    /* Ensure no border-radius on the iframe itself */
+    border-radius: 0;
+    /* Ensure no white flash in dark mode */
+    background-color: transparent;
   }
 }
