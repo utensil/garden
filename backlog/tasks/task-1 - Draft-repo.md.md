@@ -23,11 +23,13 @@ Use your tools to learn about what is this repo about, and draft for-llm/repo.md
 - **Technology Stack**: TypeScript + Preact + Node.js >=22 + npm >=10.9.2
 
 ### Reference Structure Analysis
-- Analyzed forest repository's for-llm/repo.md structure via WebFetch
+- **Primary Reference**: Analyzed forest repository's for-llm/repo.md structure via WebFetch from https://github.com/utensil/forest/raw/refs/heads/main/for-llm/repo.md
 - Applied hierarchical organization patterns: general→specific, setup→usage→advanced
 - Adopted table-based project layout with emojis for visual clarity
+- Learned structural patterns: command reference sections, directory tables, clear subsection hierarchy
 - Included comprehensive "Common Pitfalls" section to prevent errors
 - Added code pattern references for quick lookup
+- **Key Insight**: Forest repo used consistent header hierarchy, code blocks for commands, tables for structured info
 
 ### AGENTS.md Compliance
 - Followed sections mentioned in AGENTS.md requirements
