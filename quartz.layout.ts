@@ -6,6 +6,7 @@ export const sharedPageComponents: SharedLayout = {
   head: Component.Head(),
   header: [],
   afterBody: [
+    Component.Iframe(),
     Component.ConditionalRender({
       condition: (page) => page.fileData.slug === "index",
       component: Component.Flex({
