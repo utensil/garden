@@ -87,18 +87,33 @@ The `iframe-style` property accepts any valid CSS properties in camelCase format
 When using HTML iframe tags directly in markdown, you can use the style attribute:
 
 ```html
-<iframe src="https://www.example.com/" style="width: 100%; height: 400px; border-radius: 10px;"></iframe>
+<iframe src="https://example.com" style="width: 100%; height: 400px; border: 2px solid blue; border-radius: 10px;"></iframe>
 ```
+
+### Style Distribution
+
+The iframe-embed transformer intelligently distributes style properties between the container and the iframe itself:
+
+- **Container styles**: width, border, border-radius, margin, box-shadow, etc.
+- **Iframe styles**: height, padding, background, etc.
+
+This ensures that styles like borders and border-radius are applied to the container (which includes the header), while content-specific styles are applied to the iframe itself.
 
 ## Examples
 
 Here are some examples of iframes embedded directly in markdown:
 
-<iframe src="https://www.example.com" style="width: 100%; height: 500px; border: none;"></iframe>
+<iframe src="https://example.com" style="width: 100%; height: 500px; border: none;"></iframe>
 
 Here's another iframe with different styling:
 
-<iframe src="https://www.example.com" style="width: 100%; height: 400px; border-radius: 10px;"></iframe>
+<iframe src="https://example.com" style="width: 100%; height: 400px; border: 2px solid blue; border-radius: 10px;"></iframe>
+
+And one with custom margin and box-shadow:
+
+<iframe src="https://example.com" style="width: 90%; height: 300px; margin: 0 auto; box-shadow: 0 4px 8px rgba(0,0,0,0.2); border-radius: 8px;"></iframe>
+
+<iframe src="https://www.example.com" style="width: 50%; height: 200px; border-radius: 50px; border-color: red; border-width: 5px;"></iframe>
 
 ## Customization
 

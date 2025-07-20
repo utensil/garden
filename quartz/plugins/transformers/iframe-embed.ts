@@ -14,6 +14,24 @@ const defaultOptions: Options = {
   enableIframeEmbed: true,
 }
 
+// Properties that should be applied to the container instead of the iframe
+const CONTAINER_STYLE_PROPS = [
+  'width',
+  'maxWidth',
+  'minWidth',
+  'border',
+  'borderColor',
+  'borderWidth',
+  'borderStyle',
+  'borderRadius',
+  'boxShadow',
+  'margin',
+  'marginTop',
+  'marginRight',
+  'marginBottom',
+  'marginLeft',
+];
+
 export const IframeEmbed: QuartzTransformerPlugin<Partial<Options>> = (userOpts) => {
   const opts = { ...defaultOptions, ...userOpts }
 
@@ -35,6 +53,7 @@ export const IframeEmbed: QuartzTransformerPlugin<Partial<Options>> = (userOpts)
                 if (!src) return // Skip iframes without src
                 
                 let styleObj: Record<string, string> = {}
+                let containerStyleObj: Record<string, string> = {}
                 
                 // Parse style attribute if it exists
                 if (node.properties.style && typeof node.properties.style === "string") {
@@ -45,13 +64,16 @@ export const IframeEmbed: QuartzTransformerPlugin<Partial<Options>> = (userOpts)
                       if (key && value) {
                         // Convert kebab-case to camelCase for React style object
                         const camelKey = key.replace(/-([a-z])/g, (_, letter) => letter.toUpperCase())
-                        styleObj[camelKey] = value
+                        
+                        // Determine if this style should go to container or iframe
+                        if (CONTAINER_STYLE_PROPS.includes(camelKey)) {
+                          containerStyleObj[camelKey] = value
+                        } else {
+                          styleObj[camelKey] = value
+                        }
                       }
                     }
                   })
-                  
-                  // Remove any border-radius from the iframe itself
-                  delete styleObj.borderRadius
                 }
                 
                 // Set default height if not specified
@@ -59,12 +81,22 @@ export const IframeEmbed: QuartzTransformerPlugin<Partial<Options>> = (userOpts)
                   styleObj.height = "500px"
                 }
                 
+                // Set default width if not specified
+                if (!containerStyleObj.width && !styleObj.width) {
+                  containerStyleObj.width = "100%"
+                } else if (styleObj.width && !containerStyleObj.width) {
+                  // Move width from iframe to container
+                  containerStyleObj.width = styleObj.width
+                  delete styleObj.width
+                }
+                
                 // Create the iframe container structure
                 const iframeContainer: Element = {
                   type: "element",
                   tagName: "div",
                   properties: {
-                    className: ["iframe-container"]
+                    className: ["iframe-container"],
+                    style: containerStyleObj
                   },
                   children: [
                     // Header with URL and external link
