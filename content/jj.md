@@ -22,11 +22,11 @@ Git is an intimidating black box for some, but I don't fear it in my daily work,
 
 I wouldn't know this when I first read [Steve's Jujutsu Tutorial](https://steveklabnik.github.io/jujutsu-tutorial/) months ago, it's well written but still a haystack to find the needle that would click with me.
 
-[jujutsu on tangled](https://blog.tangled.sh/blog/stacking) intrigued me, by telling me "Jujutsu is built around structuring your work into meaningful commits", and showing how it helps contributors to iterate on changes with dependencies on other changes, individually reviewed, reworked, and merged. But what if I just use it on my personal repo, and don't care much about clean history?
+[Jujutsu on tangled](https://blog.tangled.sh/blog/stacking) intrigued me, by telling me "Jujutsu is built around structuring your work into meaningful commits", and showing how it helps contributors to iterate on changes with dependencies on other changes, individually reviewed, reworked, and merged. But what if I just use it on my personal repo, and don't care much about clean history?
 
 [A Newbie's First Contribution to (Rust for) Linux: Git gud](https://blog.buenzli.dev/rust-for-linux-first-contrib/#git-gud) shows the author's Git workflow to contribute to Linux kernel with a lot of fast moving forks. The configuration for `rebase` and `rerere` seems really solving the roadblocks of contributing to a thriving project. But the author said: "Jujutsu is much better at this kind of workflow and what I was actually using most of the time. I first discovered this workflow while using Jujutsu and only later found out you could do something similar with Git." A refreshing remark! Maybe I do need native and friendly support for more advanced features, even just to alleviate my mind.
 
-Eventually, pksunkara's [Git experts should try Jujutsu](https://pksunkara.com/thoughts/git-experts-should-try-jujutsu/), and his side-by-side workflow comparisons with Git, and his [`jj` configuration full of aliases](https://gist.github.com/pksunkara/622bc04242d402c4e43c7328234fd01c)  that gave me the first boost, so I finally decided to spend a day with  `jj`. I definitely no Git expert, but those aliases really look attempting, what if I can pick my few favorites?
+Eventually, pksunkara's [Git experts should try Jujutsu](https://pksunkara.com/thoughts/git-experts-should-try-jujutsu/), and his side-by-side workflow comparisons with Git, and his [`jj` configuration full of aliases](https://gist.github.com/pksunkara/622bc04242d402c4e43c7328234fd01c) that gave me the first boost, so I finally decided to spend a day with `jj`. I definitely no Git expert, but those aliases really look attempting, what if I can pick my few favorites?
 
 I started the journey with a minimal goal. I just wanted to recover my Git workflow in `jj`, as `jj` coexists with a local Git repo, and I need `jj` to work with my GitHub (or any code forge I might migrate to in future). I learned much more, and they are much easier than I thought.
 
@@ -102,7 +102,7 @@ OK, we are not on any branch, so where are we?
 
 That's a lot to take in!
 
-`f800c4ed` and  `My last commit on the main branch` can be recognized as my last Git commit hash and message.
+`f800c4ed` and `My last commit on the main branch` can be recognized as my last Git commit hash and message.
 
 `vmzsxwzu` is the *change id* assigned to it, along with a diamond ◆ indicating that it's immutable: It's written on the stars by Git, so we can't edit it.
 
@@ -125,7 +125,7 @@ The working copy has no changes.
 
 The change id of my working copy begins with `rr` (bold and colored, indicating we can refer to it uniquely with `rr`).
 
-It's a bit annoying to enter and quit pager, and unable to see the latest changes, so I'v configured `jj` to use no pager and only occupy about 2/3 screen.
+It's a bit annoying to enter and quit pager, and unable to see the latest changes, so I've configured `jj` to use no pager and only occupy about 2/3 screen.
 
 There's also alias `jj lp` that shows private (i.e. not pushed) changes, and `jj lg` that shows all changes, including elided changes that you just pushed.
 
@@ -137,7 +137,9 @@ Alias `jj d` will show the diff, that confirms that `jj` has seen our edits.
 
 We can now commit the change. `jj commit` will commit everything, opening the configured editor for commit message (just save and quit to submit, quit without saving to cancel).
 
-Aliases like `jj ci` will also fire up a built-in diff editor to interactively select which files, or even which parts (called sections) to commit. Arrow keys can fold/unfold files/sections, space to select, `c` to commit, and `q` to quit. (I couldn't find how to commit until I tried `c`, there is no visual hint at all, unless you use mouse to click on the menus, but I didn't realize that I could do it on day 1, I tried every possible key combination to trigger the menu, no luck).
+Aliases like `jj ci` will also fire up a built-in diff editor to interactively select which files, or even which parts (called sections) to commit. Arrow keys can fold/unfold files/sections, space to select, `c` to commit, and `q` to quit.
+
+I couldn't find how to commit until I tried `c`, there is no visual hint at all. I tried every possible key combination to trigger the menu, no luck. We can actually use mouse to click on the menus, but I didn't realize that I could do it on day 1.
 
 I often find myself repeatly use `jj ci` to review, select and commit, to split my local edits into a few independent changes.
 
@@ -165,7 +167,7 @@ jj e <revset>
 
 will auto stash any dirty edits, and reset local files to the state of that `<reveset>` (read: change), I can happily do any edits, or commit it with alternative selections of files or sections.
 
-We don't need to explictly commit, when we use `jj n <revset>` or `jj e <revset>` to jump to anywhere else, the local edits will be automatically committed to the original change.
+We don't need to explicitly commit, when we use `jj n <revset>` or `jj e <revset>` to jump to anywhere else, the local edits will be automatically committed to the original change.
 
 ## Evolution of a change
 
@@ -237,9 +239,9 @@ jj prw
 
 where `prw` stands for PR working copy.
 
-Per our config, it will push to a branch named `jj/<changeid>` on origin, then open a PR via `gh` (Github's official CLI to interact with issues, PRs, etc.), it will ask you for a title (default to the description of the first change), and a body, we could just press enter all the way to submit, and change anything later.
+Per our config, it will push to a branch named `jj/<changeid>` on origin, then open a PR via `gh` (Github's official CLI to interact with issues, PRs, etc.). It will ask you for a title (default to the description of the first change), and a body, we could just press enter all the way to submit, and change anything later.
 
-Personally I think such a tiny ad hoc PR is a good way to record the proposed changes, even for a personal repo. But if pusing to a branch is all you need, alias `jj pscw` (push changes of working copy) will do.
+Personally I think such a tiny ad hoc PR is a good way to record the proposed changes, even for a personal repo. But if pushing to a branch is all you need, alias `jj pscw` (push changes of working copy) will do.
 
 After merging the PR, we need
 
@@ -299,7 +301,7 @@ Then we can PR that bookmark:
 jj prb <bookmark>
 ```
 
-This would push to a branch named `<bookmark>` on Github, then use `gh` to PR it.
+This would push to a branch named `<bookmark>` on GitHub, then use `gh` to PR it.
 
 It looks like working on a branch in Git, but after we commit more changes, we need to call `jj bs -r <revset>` to set it to desired `<revset>`, then
 
@@ -353,7 +355,7 @@ After opening the PR, I've noticed a weird non-empty commit `xm`
 ◆  vmzsxwzu f800c4ed My last commit on the main branch
 ```
 
-After inspecting the diff, I believe its changes is aborbed into `rz` (`#1`), so I rebased `xm` on top of `rz` to see if there is any diff left.
+After inspecting the diff, I believe its changes is absorbed into `rz` (`#1`), so I rebased `xm` on top of `rz` to see if there is any diff left.
 
 ```
 ❯ jj rb -s xm -d rz 
@@ -407,7 +409,7 @@ where `sqa` is short for squash. Note from the output that any changes after the
 
 There is also a shortcut if I just want to absorb a change into its parent: `jj sqar <revset>`.
 
-I keep using the word "absorb" but `jj absorb` does a completely different thing (it splits a change, allowing some other changes to absorb it, by "moving each change to the closest mutable ancestor where the corresponding lines were modified last", that sounds like "desolve" to me).
+I keep using the word "absorb" but `jj absorb` does a completely different thing. It splits a change, allowing some other changes to absorb it, by "moving each change to the closest mutable ancestor where the corresponding lines were modified last", that sounds like "dissolve" to me.
 
 ## Summary
 
@@ -446,7 +448,7 @@ I'll wrap up with a summary of the commands/aliases that would be enough for dai
 
 `<revset>` could be a short change id, a bookmark, and defaults to @ (working copy).
 
-After edit, just go anywhere else (with e or n), the changes will be commited; or an explicit commit will do.
+After edit, just go anywhere else (with e or n), the changes will be committed; or an explicit commit will do.
 
 ### Working with remote branch
 
