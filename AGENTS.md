@@ -1,11 +1,11 @@
-# Agent Instructions for Forest
+# Agent Instructions
 
 *Last updated 2025-07-20*
 
 > **Purpose** – This file is the onboarding manual[^1] for every AI assistant (Claude, Amp, Codex, Amazon Q, OpenCode, etc.) and every human who edits this repository.
 > It encodes our coding standards, guard-rails, and workflow tricks so the *human 30 %*[^2] (architecture, tests, domain judgment) stays in human hands.
 
-> **Repository-specific information** – For detailed information about this specific repository, including project overview, build commands, coding standards, and other repo-specific guidelines, see [for-llm/repo.md](./for-llm/repo.md).
+> **Repository-specific information** – For detailed information about this specific repository, including project overview, build commands, coding standards, and other repo-specific guidelines, see [.agents/docs/repo.md](./.agents/docs/repo.md).
 
 ---
 
@@ -40,7 +40,7 @@ ALWAYS cite the rules which you are following at the end of your reply, like thi
 
 ### G-verify: Verify your changes
 
-- ✅ **Should**: Verify your changes by learning how the code is supposed to run/test/lint (see also section "Build, test & utility commands" in repo.md), then design a way to verify. Prefer to re-use or add tests to verify. If you need temporary script or mock data to do so, keep them all under `.agents/`, and don't remove them afterward.
+- ✅ **Should**: Verify your changes by learning how the code is supposed to run/test/lint (see also section "Build, test & utility commands" in repo.md), then design a way to verify. Prefer to re-use or add tests to verify. If you need temporary script or mock data to do so, keep them all under `.agents/scripts`, don't remove them afterward, and don't commit them per G-commit.
 - ❌ **Must NOT**: Run scripts or commands that contains dangerous code, or unrelated to code exploration and change verification.
 
 ### G-commit: Commit your changes to version control system
@@ -50,7 +50,7 @@ ALWAYS cite the rules which you are following at the end of your reply, like thi
 
 ### G-task: Follow backlog workflow for structured tasks
 
-- ✅ **Should**: Use `backlog` commands with `--plain` flag per `for-llm/backlog.md` when working on backlog tasks
+- ✅ **Should**: Use `backlog` commands with `--plain` flag per `.agents/docs/backlog.md` when working on backlog tasks
 - ✅ **Should**: Complete Definition of Done checklist before marking tasks Done
 - ✅ **Should**: Add concise execution notes to completed tasks: what was done, key changes, files modified, gotchas for future tasks
 - ❌ **Must NOT**: Implement beyond acceptance criteria without updating task first
@@ -151,13 +151,13 @@ Usage: just stars (calls this script internally)
 # AGENT-NOTE: CRITICAL FEATURES TO MAINTAIN
 # 1. IDEMPOTENT: Multiple runs must produce identical results
 # 2. ERROR HANDLING: Graceful degradation for missing data
-# 3. BUILD INTEGRATION: Validates Forester syntax after processing
+# 3. BUILD INTEGRATION: Validates syntax after processing
 # 4. DETERMINISTIC: Sorted processing ensures consistent output
 ```
 
 ### Implementation Patterns
 
-Scripts should handle input/output gracefully, integrate with existing project formats (Forester syntax, bibliography files), and maintain deterministic behavior for consistent results across multiple runs.
+Scripts should handle input/output gracefully, integrate with existing project formats, and maintain deterministic behavior for consistent results across multiple runs.
 
 ### Integration Guidelines
 
@@ -171,7 +171,7 @@ Scripts should handle input/output gracefully, integrate with existing project f
 
 Scripts should be designed for:
 - **Idempotency testing**: Run twice, second run should show no changes
-- **Build validation**: Always verify output doesn't break Forester syntax
+- **Build validation**: Always verify output doesn't break the build
 - **Error recovery**: Handle missing files, malformed data, permission issues
 
 Example testing pattern:
@@ -201,8 +201,6 @@ This file should be updated when:
 - [ ] Update build commands if changed
 - [ ] Document new pitfalls discovered
 - [ ] Update file pattern references
-
-For Forest-specific guidelines (mathematical notation, tree files, etc.), see [for-llm/repo.md](./for-llm/repo.md) and [for-llm/forest.md](./for-llm/forest.md).
 
 ---
 
