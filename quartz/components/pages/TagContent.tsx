@@ -59,7 +59,7 @@ export default ((opts?: Partial<TagContentOptions>) => {
           </article>
           <p>{i18n(cfg.locale).pages.tagContent.totalTags({ count: tags.length })}</p>
           <div>
-            {tags.map((tag) => {
+            {tags.sort((a, b) => tagItemMap.get(b)!.length - tagItemMap.get(a)!.length).map((tag) => {
               const pages = tagItemMap.get(tag)!
               const listProps = {
                 ...props,
@@ -84,10 +84,10 @@ export default ((opts?: Partial<TagContentOptions>) => {
                       {tag} <span>{pages.length}</span>
                     </a>
                   </h2>
-                  {content && <p>{content}</p>}
-                  <div class="page-listing">
+                  {false && content && <p>{content}</p>}
+                  {false && <div class="page-listing">
                     <p>
-                      { /* i18n(cfg.locale).pages.tagContent.itemsUnderTag({ count: pages.length }) */ }
+                      { false && i18n(cfg.locale).pages.tagContent.itemsUnderTag({ count: pages.length })}
                       {pages.length > options.numPages && (
                         <>
                           {" "}
@@ -100,7 +100,7 @@ export default ((opts?: Partial<TagContentOptions>) => {
                       )}
                     </p>
                     <PageList limit={options.numPages} {...listProps} sort={options?.sort} />
-                  </div>
+                  </div>}
                 </div>
               )
             })}
