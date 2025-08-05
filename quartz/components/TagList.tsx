@@ -51,6 +51,12 @@ a.internal.tag-link {
   padding: 0.2rem 0.4rem;
   margin: 0 0.1rem;
 }
+
+a.internal.tag-link > span {
+  color: #666;
+  font-size: 0.6em;
+  vertical-align: middle;
+}
 `
 
 export default (() => TagList) satisfies QuartzComponentConstructor

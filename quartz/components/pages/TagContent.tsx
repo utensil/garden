@@ -81,13 +81,13 @@ export default ((opts?: Partial<TagContentOptions>) => {
                 <div>
                   <h2>
                     <a class="internal tag-link" href={href}>
-                      {tag}
+                      {tag} <span>{pages.length}</span>
                     </a>
                   </h2>
                   {content && <p>{content}</p>}
                   <div class="page-listing">
                     <p>
-                      {i18n(cfg.locale).pages.tagContent.itemsUnderTag({ count: pages.length })}
+                      { /* i18n(cfg.locale).pages.tagContent.itemsUnderTag({ count: pages.length }) */ }
                       {pages.length > options.numPages && (
                         <>
                           {" "}

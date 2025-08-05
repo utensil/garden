@@ -16,6 +16,9 @@ init:
     git remote -v
     npx quartz sync --no-pull
 
+prep:
+    npm i
+
 build:
     npx quartz build
 
