@@ -5,7 +5,7 @@ default:
 # Don't run it again
 # 
 init:
-    #!/usr/bin/env zsh
+    #!/usr/bin/env bash
     cd ~/projects
     git clone https://github.com/jackyzha0/quartz.git
     cd quartz
@@ -27,3 +27,14 @@ dev:
 
 sync:
     jj bs v4 -r @- && jj psb v4
+
+# create a new note
+new TITLE="new note":
+    #!/usr/bin/env bash
+    (jj status|grep -F 'Working copy (@)'|grep -F '(empty)') || jj new
+    NOTE_ID=$(jj log -r @ -T 'change_id.short()' --no-graph)
+    DATE=$(date "+%Y-%m-%d")
+    mkdir -p content/notes
+    cp -f templates/notes.md content/notes/$NOTE_ID.md
+    sed -i '' -e 's/TITLE/{{TITLE}}/g' -e "s/DATE/$DATE/g" content/notes/$NOTE_ID.md
+    echo "New note at content/notes/$NOTE_ID.md"
