@@ -1,5 +1,6 @@
 ---
-title: TITLE 
+title: |
+  TITLE 
 date: DATE
 tags:
   - note
