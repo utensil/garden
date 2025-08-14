@@ -31,7 +31,8 @@ sync:
 # create a new note
 new TITLE="new note":
     #!/usr/bin/env bash
-    (jj status|grep -F 'Working copy (@)'|grep -F '(empty)') || jj new
+    is_working_copy_empty=$(jj status|grep -F 'Working copy (@)'|grep -F '(empty)')
+    [[ -z $is_working_copy_empty ]] || jj new
     NOTE_ID=$(jj log -r @ -T 'change_id.short()' --no-graph)
     DATE=$(date "+%Y-%m-%d")
     mkdir -p content/notes
