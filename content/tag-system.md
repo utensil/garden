@@ -11,4 +11,5 @@ For now, I just have the following examples:
 
 - #post
 - #im
+- #selfhost
 
