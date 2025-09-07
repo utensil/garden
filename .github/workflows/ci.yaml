@@ -23,6 +23,13 @@ jobs:
         with:
           fetch-depth: 0
 
+      - uses: actions/checkout@v4
+        with:
+          repository: utensil/forest
+          sparse-checkout: |
+            garden
+          path: forest
+
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
@@ -35,6 +42,9 @@ jobs:
           key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
           restore-keys: |
             ${{ runner.os }}-node-
+
+      - run: |
+        ln -s $(pwd)/forest/garden ./content
 
       - run: npm ci
 
