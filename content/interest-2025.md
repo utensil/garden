@@ -25,5 +25,5 @@ One annoying thing when I was working with Rust as part of project `native-land`
 
 I was always with comfortable with CLI in terminals, but I didn't realize there is also a whole world of modern TUIs, and Neovim is just one of them. So I started trying out many CLIs and TUIs, to the extent that I wish to do everything inside terminal. Eventually, the code editor also switched to Helix, with much less configuration efforts, as it didn't have plugins. All the little things I learn about using these CLIs and TUIs, I've noted them as `just` tasks and their comments.
 
-(to be continued...then agents, rss, selfhost)
+(to be continued...then forester 5.x, agents, open web, selfhost, web)
 
