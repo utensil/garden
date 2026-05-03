@@ -1,0 +1,21 @@
+---
+title: "Examine limitations of Floating Point Arithmetic"
+date: 2018-09-29
+tags: [interest]
+aliases: [uts-0044]
+source: "https://utensil.github.io/forest/uts-0044/"
+---
+
+Add tests to explain and verify them.
+
+- https://www.exploringbinary.com/why-0-point-1-does-not-exist-in-floating-point/
+- https://www.exploringbinary.com/floating-point-questions-are-endless-on-stackoverflow-com/
+- https://docs.python.org/3/tutorial/floatingpoint.html
+- https://floating-point-gui.de/basic/
+- https://github.com/vpiotr/decimal_for_cpp
+- https://www.boost.org/doc/libs/1_66_0/libs/multiprecision/doc/html/index.html
+- https://en.wikipedia.org/wiki/Floating-point_arithmetic#Accuracy_problems
+
+#### [utensil](https://github.com/utensil) commented at [2023-09-03 09:46](https://github.com/utensil/utensil.github.io/issues/126#issuecomment-1704072682):
+
+https://egraphs-good.github.io/egglog/?example=herbie

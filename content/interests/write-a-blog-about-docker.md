@@ -1,0 +1,14 @@
+---
+title: "Write a blog about docker"
+date: 2016-11-29
+tags: [interest]
+aliases: [uts-0055]
+source: "https://utensil.github.io/forest/uts-0055/"
+---
+
+#### [utensil](https://github.com/utensil) commented at [2023-08-29 05:51](https://github.com/utensil/utensil.github.io/issues/115#issuecomment-1696812369):
+
+```
+sudo docker run --gpus all --name llm --shm-size=8g -p 1111:1111 nvcr.io/nvidia/pytorch:22.12-py3 bash -c 'sleep infinity'
+sudo docker exec -it llm bash
+```

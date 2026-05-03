@@ -1,0 +1,17 @@
+---
+title: "A new markdown wiki"
+date: 2015-04-22
+tags: [interest]
+aliases: [uts-0113]
+source: "https://utensil.github.io/forest/uts-0113/"
+---
+
+#### [utensil](https://github.com/utensil) commented at [2015-05-17 14:59](https://github.com/utensil/utensil.github.io/issues/57#issuecomment-102812075):
+
+- https://github.com/tylingsoft/markdown-plus/blob/master/markdown-plus.js
+- https://github.com/medialize/URI.js
+- https://github.com/Dynalon/mdwiki/tree/master/js/ts
+
+#### [utensil](https://github.com/utensil) commented at [2016-05-28 08:48](https://github.com/utensil/utensil.github.io/issues/57#issuecomment-222297850):
+
+Close since https://github.com/utensil/umd-wiki is already under construction.

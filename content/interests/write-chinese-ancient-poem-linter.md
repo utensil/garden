@@ -1,0 +1,28 @@
+---
+title: "Write Chinese Ancient Poem Linter"
+date: 2016-09-01
+tags: [interest]
+aliases: [uts-0062]
+source: "https://utensil.github.io/forest/uts-0062/"
+---
+
+- https://github.com/liangqi/zhsc-qt
+- https://github.com/GITenberg/Chinese-Poems_37938
+- https://github.com/GITenberg/A-Hundred-and-Seventy-Chinese-Poems_42290
+- https://github.com/charsunny/PoemApp
+- https://github.com/rainrambler/PoemStar
+- https://github.com/lijiancheng0614/poem_generator
+- https://github.com/hx364/Chinese_Poem_RNN
+- https://github.com/ManfredVon/Poem
+- https://github.com/todototry/AncientChinesePoemsDB
+- https://github.com/XingxingZhang/rnnpg
+- https://github.com/fumin/ntm
+- https://github.com/ckmarkoh/AcrosticPoem
+- https://github.com/mozillazg/python-pinyin
+- https://github.com/letiantian/Pinyin2Hanzi
+- https://github.com/hotoo/pinyin
+- https://github.com/overtrue/pinyin
+- https://github.com/stuxuhai/jpinyin
+- https://github.com/letiantian/ChineseTone
+- https://github.com/letiantian/mini-pinyin
+- https://github.com/iensu/pinyinizer

@@ -1,0 +1,21 @@
+---
+title: "Investigate cazala/synaptic"
+date: 2014-10-27
+tags: [interest]
+aliases: [uts-0145]
+source: "https://utensil.github.io/forest/uts-0145/"
+---
+
+Investigate https://github.com/cazala/synaptic :
+- https://github.com/cazala/synaptic/wiki/Neural-Networks-101
+- http://www.overcomplete.net/papers/nn2012.pdf
+
+More Arch:
+- [Neural Turing Machines](http://arxiv.org/abs/1410.5401)
+- https://github.com/iandanforth/nupic-js and https://github.com/WalnutiQ/WalnutiQ#important-brain-theories-in-use
+
+Reimplement using:
+- https://github.com/toji/gl-matrix
+- https://github.com/sjkaliski/numbers.js
+- https://github.com/josdejong/mathjs
+- https://github.com/chandlerprall/Physijs
