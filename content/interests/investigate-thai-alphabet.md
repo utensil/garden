@@ -1,7 +1,7 @@
 ---
 title: "Investigate Thai Alphabet"
 date: 2016-07-18
-tags: [interest]
+tags: [interest, lang]
 aliases: [uts-0067]
 source: "https://utensil.github.io/forest/uts-0067/"
 ---

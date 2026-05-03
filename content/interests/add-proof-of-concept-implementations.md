@@ -1,7 +1,7 @@
 ---
 title: "Add proof-of-concept implementations"
 date: 2015-04-08
-tags: [interest]
+tags: [interest, devtools]
 aliases: [uts-0125]
 source: "https://utensil.github.io/forest/uts-0125/"
 ---

@@ -1,7 +1,7 @@
 ---
 title: "Add plan 2008"
 date: 2016-11-20
-tags: [interest]
+tags: [interest, personal, essay]
 aliases: [uts-0057]
 source: "https://utensil.github.io/forest/uts-0057/"
 ---

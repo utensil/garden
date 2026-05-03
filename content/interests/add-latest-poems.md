@@ -1,7 +1,7 @@
 ---
 title: "Add latest poems"
 date: 2016-09-14
-tags: [interest]
+tags: [interest, creative]
 aliases: [uts-0059]
 source: "https://utensil.github.io/forest/uts-0059/"
 ---

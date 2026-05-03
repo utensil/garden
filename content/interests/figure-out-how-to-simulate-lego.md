@@ -1,7 +1,7 @@
 ---
 title: "Figure out how to simulate LEGO® MINDSTORMS® EV3"
 date: 2014-09-16
-tags: [interest]
+tags: [interest, cg]
 aliases: [uts-0150]
 source: "https://utensil.github.io/forest/uts-0150/"
 ---

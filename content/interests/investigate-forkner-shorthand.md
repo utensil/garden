@@ -1,7 +1,7 @@
 ---
 title: "Investigate Forkner Shorthand"
 date: 2016-06-29
-tags: [interest]
+tags: [interest, lang]
 aliases: [uts-0069]
 source: "https://utensil.github.io/forest/uts-0069/"
 ---

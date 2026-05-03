@@ -1,7 +1,7 @@
 ---
 title: "Investigate the neurobiology of dreaming"
 date: 2016-06-10
-tags: [interest]
+tags: [interest, bio]
 aliases: [uts-0074]
 source: "https://utensil.github.io/forest/uts-0074/"
 ---

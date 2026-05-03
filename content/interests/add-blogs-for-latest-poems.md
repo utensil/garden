@@ -1,7 +1,7 @@
 ---
 title: "Add blogs for latest poems"
 date: 2015-04-23
-tags: [interest]
+tags: [interest, creative, poem]
 aliases: [uts-0111]
 source: "https://utensil.github.io/forest/uts-0111/"
 ---

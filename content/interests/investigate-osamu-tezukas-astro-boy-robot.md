@@ -1,7 +1,7 @@
 ---
 title: "Investigate Osamu Tezuka's Astro Boy \"Robot Spaceship\""
 date: 2023-08-23
-tags: [interest]
+tags: [interest, creative]
 aliases: [uts-0037]
 source: "https://utensil.github.io/forest/uts-0037/"
 ---

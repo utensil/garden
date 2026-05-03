@@ -1,7 +1,7 @@
 ---
 title: "Write Chinese Ancient Poem Linter"
 date: 2016-09-01
-tags: [interest]
+tags: [interest, creative, lang]
 aliases: [uts-0062]
 source: "https://utensil.github.io/forest/uts-0062/"
 ---

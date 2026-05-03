@@ -1,7 +1,7 @@
 ---
 title: "Find good translation collaboration solutions"
 date: 2015-04-14
-tags: [interest]
+tags: [interest, lang]
 aliases: [uts-0119]
 source: "https://utensil.github.io/forest/uts-0119/"
 ---

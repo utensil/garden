@@ -1,7 +1,7 @@
 ---
 title: "Investigate Evolving Objects (EO)"
 date: 2014-12-25
-tags: [interest]
+tags: [interest, lm]
 aliases: [uts-0141]
 source: "https://utensil.github.io/forest/uts-0141/"
 ---

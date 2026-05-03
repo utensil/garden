@@ -1,7 +1,7 @@
 ---
 title: "Build an app for cultivating habits"
 date: 2015-04-22
-tags: [interest]
+tags: [interest, personal]
 aliases: [uts-0115]
 source: "https://utensil.github.io/forest/uts-0115/"
 ---

@@ -1,7 +1,7 @@
 ---
 title: "Establish a timeline for my most valuable experiences"
 date: 2015-04-22
-tags: [interest]
+tags: [interest, personal]
 aliases: [uts-0116]
 source: "https://utensil.github.io/forest/uts-0116/"
 ---

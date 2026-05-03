@@ -1,7 +1,7 @@
 ---
 title: "Find good screen record software"
 date: 2016-04-08
-tags: [interest]
+tags: [interest, media, devtools]
 aliases: [uts-0102]
 source: "https://utensil.github.io/forest/uts-0102/"
 ---

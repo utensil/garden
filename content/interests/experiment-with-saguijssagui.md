@@ -1,7 +1,7 @@
 ---
 title: "Experiment with saguijs/sagui"
 date: 2016-07-06
-tags: [interest]
+tags: [interest, webdev, devtools]
 aliases: [uts-0068]
 source: "https://utensil.github.io/forest/uts-0068/"
 ---

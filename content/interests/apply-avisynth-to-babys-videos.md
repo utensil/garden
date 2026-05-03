@@ -1,7 +1,7 @@
 ---
 title: "Apply AviSynth to baby's videos"
 date: 2014-12-21
-tags: [interest]
+tags: [interest, media]
 aliases: [uts-0142]
 source: "https://utensil.github.io/forest/uts-0142/"
 ---

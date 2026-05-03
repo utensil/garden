@@ -1,7 +1,7 @@
 ---
 title: "Collect accounts and identities that I seldom use"
 date: 2015-03-04
-tags: [interest]
+tags: [interest, personal]
 aliases: [uts-0135]
 source: "https://utensil.github.io/forest/uts-0135/"
 ---
