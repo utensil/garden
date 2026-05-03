@@ -1,7 +1,7 @@
 ---
 title: "Investigate Paxos-related with TLA+ in mind"
 date: 2018-09-26
-tags: [interest]
+tags: [interest, formal]
 aliases: [uts-0045]
 source: "https://utensil.github.io/forest/uts-0045/"
 ---

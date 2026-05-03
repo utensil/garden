@@ -1,7 +1,7 @@
 ---
 title: "Visualize sorting algorithms"
 date: 2016-05-27
-tags: [interest]
+tags: [interest, diagram, math]
 aliases: [uts-0081]
 source: "https://utensil.github.io/forest/uts-0081/"
 ---

@@ -1,7 +1,7 @@
 ---
 title: "Utilize sites to find papers, articles, books and data"
 date: 2016-05-19
-tags: [interest]
+tags: [interest, kb]
 aliases: [uts-0086]
 source: "https://utensil.github.io/forest/uts-0086/"
 ---

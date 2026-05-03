@@ -1,7 +1,7 @@
 ---
 title: "Write a blog to digest Category Theory"
 date: 2014-09-04
-tags: [interest]
+tags: [interest, math]
 aliases: [uts-0154]
 source: "https://utensil.github.io/forest/uts-0154/"
 ---

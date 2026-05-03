@@ -1,7 +1,7 @@
 ---
 title: "Migrate from disqus to giscus"
 date: 2024-03-15
-tags: [interest]
+tags: [interest, kb]
 aliases: [uts-0031]
 source: "https://utensil.github.io/forest/uts-0031/"
 ---

@@ -1,7 +1,7 @@
 ---
 title: "Try these clouds"
 date: 2017-11-07
-tags: [interest]
+tags: [interest, selfhost, gpu]
 aliases: [uts-0048]
 source: "https://utensil.github.io/forest/uts-0048/"
 ---

@@ -1,7 +1,7 @@
 ---
 title: "Fix identation in syntax highlight"
 date: 2015-04-09
-tags: [interest]
+tags: [interest, devtools]
 aliases: [uts-0122]
 source: "https://utensil.github.io/forest/uts-0122/"
 ---

@@ -1,7 +1,7 @@
 ---
 title: "Add blogs to consume some of John Baez's work"
 date: 2014-08-10
-tags: [interest]
+tags: [interest, math, ph]
 aliases: [uts-0164]
 source: "https://utensil.github.io/forest/uts-0164/"
 ---

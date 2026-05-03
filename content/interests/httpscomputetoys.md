@@ -1,7 +1,7 @@
 ---
 title: "https://compute.toys/"
 date: 2023-12-23
-tags: [interest]
+tags: [interest, shader, gpu]
 aliases: [uts-0034]
 source: "https://utensil.github.io/forest/uts-0034/"
 ---

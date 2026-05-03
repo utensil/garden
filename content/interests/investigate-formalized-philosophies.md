@@ -1,7 +1,7 @@
 ---
 title: "Investigate formalized philosophies"
 date: 2023-09-03
-tags: [interest]
+tags: [interest, formal]
 aliases: [uts-0035]
 source: "https://utensil.github.io/forest/uts-0035/"
 ---

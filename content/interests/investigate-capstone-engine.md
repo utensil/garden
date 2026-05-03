@@ -1,7 +1,7 @@
 ---
 title: "Investigate Capstone Engine"
 date: 2015-03-12
-tags: [interest]
+tags: [interest, sec]
 aliases: [uts-0133]
 source: "https://utensil.github.io/forest/uts-0133/"
 ---

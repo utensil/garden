@@ -1,7 +1,7 @@
 ---
 title: "Write a blog about daily Cryptography"
 date: 2016-05-28
-tags: [interest]
+tags: [interest, sec]
 aliases: [uts-0078]
 source: "https://utensil.github.io/forest/uts-0078/"
 ---

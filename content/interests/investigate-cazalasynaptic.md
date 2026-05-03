@@ -1,7 +1,7 @@
 ---
 title: "Investigate cazala/synaptic"
 date: 2014-10-27
-tags: [interest]
+tags: [interest, lm]
 aliases: [uts-0145]
 source: "https://utensil.github.io/forest/uts-0145/"
 ---

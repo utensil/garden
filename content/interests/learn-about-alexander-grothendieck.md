@@ -1,7 +1,7 @@
 ---
 title: "Learn about Alexander Grothendieck"
 date: 2016-12-17
-tags: [interest]
+tags: [interest, math]
 aliases: [uts-0054]
 source: "https://utensil.github.io/forest/uts-0054/"
 ---

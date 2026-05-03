@@ -1,7 +1,7 @@
 ---
 title: "Write a blog to review basic CG"
 date: 2015-03-30
-tags: [interest]
+tags: [interest, cg, shader]
 aliases: [uts-0128]
 source: "https://utensil.github.io/forest/uts-0128/"
 ---

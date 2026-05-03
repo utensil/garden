@@ -1,7 +1,7 @@
 ---
 title: "Understand Monad in Haskell and Rust"
 date: 2018-10-04
-tags: [interest]
+tags: [interest, lang, rust]
 aliases: [uts-0042]
 source: "https://utensil.github.io/forest/uts-0042/"
 ---

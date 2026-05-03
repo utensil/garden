@@ -1,7 +1,7 @@
 ---
 title: "Investigate Collation in MySQL"
 date: 2016-06-23
-tags: [interest]
+tags: [interest, disect]
 aliases: [uts-0070]
 source: "https://utensil.github.io/forest/uts-0070/"
 ---

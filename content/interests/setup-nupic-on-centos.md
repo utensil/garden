@@ -1,7 +1,7 @@
 ---
 title: "Setup NuPIC on CentOS"
 date: 2014-08-12
-tags: [interest]
+tags: [interest, lm]
 aliases: [uts-0161]
 source: "https://utensil.github.io/forest/uts-0161/"
 ---

@@ -1,7 +1,7 @@
 ---
 title: "Compare SSH and File compare tools"
 date: 2016-04-26
-tags: [interest]
+tags: [interest, devtools]
 aliases: [uts-0099]
 source: "https://utensil.github.io/forest/uts-0099/"
 ---

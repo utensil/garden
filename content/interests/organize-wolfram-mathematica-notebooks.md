@@ -1,7 +1,7 @@
 ---
 title: "Organize Wolfram Mathematica notebooks"
 date: 2014-08-17
-tags: [interest]
+tags: [interest, math, formal]
 aliases: [uts-0159]
 source: "https://utensil.github.io/forest/uts-0159/"
 ---

@@ -1,7 +1,7 @@
 ---
 title: "Find sites to read open papers"
 date: 2016-05-11
-tags: [interest]
+tags: [interest, kb]
 aliases: [uts-0091]
 source: "https://utensil.github.io/forest/uts-0091/"
 ---

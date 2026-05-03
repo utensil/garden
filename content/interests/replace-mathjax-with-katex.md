@@ -1,7 +1,7 @@
 ---
 title: "Replace MathJax with KaTeX"
 date: 2014-09-16
-tags: [interest]
+tags: [interest, typst, kb]
 aliases: [uts-0152]
 source: "https://utensil.github.io/forest/uts-0152/"
 ---

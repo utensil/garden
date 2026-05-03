@@ -1,7 +1,7 @@
 ---
 title: "Geometric Algebra (GA)"
 date: 2017-10-07
-tags: [interest]
+tags: [interest, math]
 aliases: [uts-0051]
 source: "https://utensil.github.io/forest/uts-0051/"
 ---

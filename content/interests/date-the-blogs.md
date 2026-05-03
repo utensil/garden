@@ -1,7 +1,7 @@
 ---
 title: "Date the blogs"
 date: 2015-04-09
-tags: [interest]
+tags: [interest, kb]
 aliases: [uts-0123]
 source: "https://utensil.github.io/forest/uts-0123/"
 ---

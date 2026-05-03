@@ -1,7 +1,7 @@
 ---
 title: "Learn open courses from MIT"
 date: 2016-05-24
-tags: [interest]
+tags: [interest, math, ph]
 aliases: [uts-0083]
 source: "https://utensil.github.io/forest/uts-0083/"
 ---

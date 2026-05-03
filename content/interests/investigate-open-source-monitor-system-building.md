@@ -1,7 +1,7 @@
 ---
 title: "Investigate open source monitor system building blocks"
 date: 2015-02-03
-tags: [interest]
+tags: [interest, chaos, selfhost]
 aliases: [uts-0138]
 source: "https://utensil.github.io/forest/uts-0138/"
 ---

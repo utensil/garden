@@ -1,7 +1,7 @@
 ---
 title: "Investigate Mac tooling"
 date: 2016-05-07
-tags: [interest]
+tags: [interest, devtools]
 aliases: [uts-0095]
 source: "https://utensil.github.io/forest/uts-0095/"
 ---

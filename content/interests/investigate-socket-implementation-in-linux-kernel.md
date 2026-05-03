@@ -1,7 +1,7 @@
 ---
 title: "Investigate socket implementation in Linux kernel"
 date: 2015-04-21
-tags: [interest]
+tags: [interest, linux]
 aliases: [uts-0117]
 source: "https://utensil.github.io/forest/uts-0117/"
 ---

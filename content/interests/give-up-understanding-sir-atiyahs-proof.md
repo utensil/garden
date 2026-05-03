@@ -1,7 +1,7 @@
 ---
 title: "Give up understanding Sir Atiyah's proof"
 date: 2018-10-04
-tags: [interest]
+tags: [interest, math]
 aliases: [uts-0041]
 source: "https://utensil.github.io/forest/uts-0041/"
 ---

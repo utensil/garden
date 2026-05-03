@@ -1,7 +1,7 @@
 ---
 title: "Add blogs about graphing"
 date: 2014-08-15
-tags: [interest]
+tags: [interest, diagram]
 aliases: [uts-0160]
 source: "https://utensil.github.io/forest/uts-0160/"
 ---

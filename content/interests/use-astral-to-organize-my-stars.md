@@ -1,7 +1,7 @@
 ---
 title: "Use Astral to organize my stars"
 date: 2015-04-06
-tags: [interest]
+tags: [interest, kb]
 aliases: [uts-0126]
 source: "https://utensil.github.io/forest/uts-0126/"
 ---

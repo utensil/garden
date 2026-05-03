@@ -1,7 +1,7 @@
 ---
 title: "Investigate GPGPU using WebGL"
 date: 2014-10-29
-tags: [interest]
+tags: [interest, gpu, shader]
 aliases: [uts-0144]
 source: "https://utensil.github.io/forest/uts-0144/"
 ---

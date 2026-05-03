@@ -1,7 +1,7 @@
 ---
 title: "Fix header fonts and link color"
 date: 2015-04-09
-tags: [interest]
+tags: [interest, kb]
 aliases: [uts-0121]
 source: "https://utensil.github.io/forest/uts-0121/"
 ---

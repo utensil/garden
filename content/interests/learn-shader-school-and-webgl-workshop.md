@@ -1,7 +1,7 @@
 ---
 title: "Learn shader-school and webgl-workshop"
 date: 2015-03-30
-tags: [interest]
+tags: [interest, shader, cg]
 aliases: [uts-0129]
 source: "https://utensil.github.io/forest/uts-0129/"
 ---

@@ -1,7 +1,7 @@
 ---
 title: "Investigate Eigen, Manifold ToolKit, GTSAM and Pteros"
 date: 2014-08-26
-tags: [interest]
+tags: [interest, math]
 aliases: [uts-0157]
 source: "https://utensil.github.io/forest/uts-0157/"
 ---

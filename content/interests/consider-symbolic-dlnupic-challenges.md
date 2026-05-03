@@ -1,7 +1,7 @@
 ---
 title: "Consider symbolic DL/Nupic challenges"
 date: 2016-06-10
-tags: [interest]
+tags: [interest, lm]
 aliases: [uts-0073]
 source: "https://utensil.github.io/forest/uts-0073/"
 ---

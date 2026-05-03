@@ -1,7 +1,7 @@
 ---
 title: "Collect building blocks for a bot to answer questions in a Wechat group"
 date: 2016-05-28
-tags: [interest]
+tags: [interest, lm, agent]
 aliases: [uts-0079]
 source: "https://utensil.github.io/forest/uts-0079/"
 ---

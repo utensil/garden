@@ -1,7 +1,7 @@
 ---
 title: "Examine limitations of Floating Point Arithmetic"
 date: 2018-09-29
-tags: [interest]
+tags: [interest, math]
 aliases: [uts-0044]
 source: "https://utensil.github.io/forest/uts-0044/"
 ---

@@ -1,7 +1,7 @@
 ---
 title: "Organize my config files"
 date: 2015-04-15
-tags: [interest]
+tags: [interest, devtools]
 aliases: [uts-0118]
 source: "https://utensil.github.io/forest/uts-0118/"
 ---

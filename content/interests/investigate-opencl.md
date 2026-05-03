@@ -1,7 +1,7 @@
 ---
 title: "Investigate OpenCL"
 date: 2017-11-04
-tags: [interest]
+tags: [interest, gpu]
 aliases: [uts-0050]
 source: "https://utensil.github.io/forest/uts-0050/"
 ---

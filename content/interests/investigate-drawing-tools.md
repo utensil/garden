@@ -1,7 +1,7 @@
 ---
 title: "Investigate drawing tools"
 date: 2015-04-09
-tags: [interest]
+tags: [interest, diagram]
 aliases: [uts-0124]
 source: "https://utensil.github.io/forest/uts-0124/"
 ---

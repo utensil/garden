@@ -1,7 +1,7 @@
 ---
 title: "MySQL Server Internal related"
 date: 2016-03-18
-tags: [interest]
+tags: [interest, disect]
 aliases: [uts-0105]
 source: "https://utensil.github.io/forest/uts-0105/"
 ---

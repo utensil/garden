@@ -1,7 +1,7 @@
 ---
 title: "Investigate Khan Academy"
 date: 2014-09-16
-tags: [interest]
+tags: [interest, kb]
 aliases: [uts-0151]
 source: "https://utensil.github.io/forest/uts-0151/"
 ---

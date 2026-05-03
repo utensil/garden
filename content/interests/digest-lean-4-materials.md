@@ -1,7 +1,7 @@
 ---
 title: "Digest Lean 4 materials"
 date: 2022-10-04
-tags: [interest]
+tags: [interest, lean, formal]
 aliases: [uts-0038]
 source: "https://utensil.github.io/forest/uts-0038/"
 ---

@@ -1,7 +1,7 @@
 ---
 title: "Investigate Customer Journey Map"
 date: 2016-08-14
-tags: [interest]
+tags: [interest, diagram]
 aliases: [uts-0064]
 source: "https://utensil.github.io/forest/uts-0064/"
 ---

@@ -1,7 +1,7 @@
 ---
 title: "Export issues and keep them in the repo"
 date: 2024-05-28
-tags: [interest]
+tags: [interest, devtools]
 aliases: [uts-0030]
 source: "https://utensil.github.io/forest/uts-0030/"
 ---

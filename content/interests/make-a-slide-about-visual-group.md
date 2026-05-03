@@ -1,7 +1,7 @@
 ---
 title: "Make a slide about Visual Group Theory"
 date: 2016-05-21
-tags: [interest]
+tags: [interest, math]
 aliases: [uts-0084]
 source: "https://utensil.github.io/forest/uts-0084/"
 ---

@@ -1,7 +1,7 @@
 ---
 title: "Investigate queues and locks in C++ and rust"
 date: 2018-10-04
-tags: [interest]
+tags: [interest, rust, linux]
 aliases: [uts-0043]
 source: "https://utensil.github.io/forest/uts-0043/"
 ---

@@ -1,7 +1,7 @@
 ---
 title: "Phonetic algorithm"
 date: 2016-04-29
-tags: [interest]
+tags: [interest, math]
 aliases: [uts-0097]
 source: "https://utensil.github.io/forest/uts-0097/"
 ---

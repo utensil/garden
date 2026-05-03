@@ -1,7 +1,7 @@
 ---
 title: "Write a blog about my thoughts on Physics"
 date: 2016-05-25
-tags: [interest]
+tags: [interest, ph, math]
 aliases: [uts-0082]
 source: "https://utensil.github.io/forest/uts-0082/"
 ---

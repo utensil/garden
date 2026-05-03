@@ -1,7 +1,7 @@
 ---
 title: "Digest UvA DL 1&2"
 date: 2022-10-04
-tags: [interest]
+tags: [interest, lm]
 aliases: [uts-0039]
 source: "https://utensil.github.io/forest/uts-0039/"
 ---

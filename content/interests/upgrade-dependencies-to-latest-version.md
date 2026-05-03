@@ -1,7 +1,7 @@
 ---
 title: "Upgrade dependencies to latest version"
 date: 2015-03-28
-tags: [interest]
+tags: [interest, devtools]
 aliases: [uts-0130]
 source: "https://utensil.github.io/forest/uts-0130/"
 ---

@@ -1,7 +1,7 @@
 ---
 title: "A new markdown wiki"
 date: 2015-04-22
-tags: [interest]
+tags: [interest, kb]
 aliases: [uts-0113]
 source: "https://utensil.github.io/forest/uts-0113/"
 ---

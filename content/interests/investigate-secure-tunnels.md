@@ -1,7 +1,7 @@
 ---
 title: "Investigate secure tunnels"
 date: 2016-06-05
-tags: [interest]
+tags: [interest, sec, selfhost]
 aliases: [uts-0075]
 source: "https://utensil.github.io/forest/uts-0075/"
 ---

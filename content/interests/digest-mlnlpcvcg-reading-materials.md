@@ -1,7 +1,7 @@
 ---
 title: "Digest ML/NLP/CV/CG reading materials"
 date: 2016-05-17
-tags: [interest]
+tags: [interest, lm, cg]
 aliases: [uts-0087]
 source: "https://utensil.github.io/forest/uts-0087/"
 ---

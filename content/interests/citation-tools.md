@@ -1,7 +1,7 @@
 ---
 title: "Citation tools"
 date: 2016-05-09
-tags: [interest]
+tags: [interest, kb]
 aliases: [uts-0093]
 source: "https://utensil.github.io/forest/uts-0093/"
 ---

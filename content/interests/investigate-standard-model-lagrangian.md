@@ -1,7 +1,7 @@
 ---
 title: "Investigate Standard Model Lagrangian"
 date: 2023-08-23
-tags: [interest]
+tags: [interest, ph, math]
 aliases: [uts-0036]
 source: "https://utensil.github.io/forest/uts-0036/"
 ---

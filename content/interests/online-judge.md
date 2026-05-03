@@ -1,7 +1,7 @@
 ---
 title: "Online Judge"
 date: 2015-05-22
-tags: [interest]
+tags: [interest, math]
 aliases: [uts-0108]
 source: "https://utensil.github.io/forest/uts-0108/"
 ---

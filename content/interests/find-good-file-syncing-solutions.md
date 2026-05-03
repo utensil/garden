@@ -1,7 +1,7 @@
 ---
 title: "Find good file syncing solutions"
 date: 2016-06-01
-tags: [interest]
+tags: [interest, selfhost]
 aliases: [uts-0077]
 source: "https://utensil.github.io/forest/uts-0077/"
 ---

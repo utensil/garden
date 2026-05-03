@@ -1,7 +1,7 @@
 ---
 title: "Investigate AlphaGo Zero"
 date: 2017-11-04
-tags: [interest]
+tags: [interest, lm]
 aliases: [uts-0049]
 source: "https://utensil.github.io/forest/uts-0049/"
 ---

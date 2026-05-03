@@ -1,7 +1,7 @@
 ---
 title: "Add a standalone page to elaborate on my poems"
 date: 2016-04-30
-tags: [interest]
+tags: [interest, kb]
 aliases: [uts-0096]
 source: "https://utensil.github.io/forest/uts-0096/"
 ---

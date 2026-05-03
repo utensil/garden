@@ -1,7 +1,7 @@
 ---
 title: "Add handy links to site"
 date: 2016-10-02
-tags: [interest]
+tags: [interest, kb]
 aliases: [uts-0058]
 source: "https://utensil.github.io/forest/uts-0058/"
 ---

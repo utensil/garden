@@ -1,7 +1,7 @@
 ---
 title: "Look for a new static site generator in node.js instead of ruby"
 date: 2016-03-19
-tags: [interest]
+tags: [interest, kb]
 aliases: [uts-0104]
 source: "https://utensil.github.io/forest/uts-0104/"
 ---

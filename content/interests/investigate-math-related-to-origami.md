@@ -1,7 +1,7 @@
 ---
 title: "Investigate math related to Origami"
 date: 2019-04-09
-tags: [interest]
+tags: [interest, math]
 aliases: [uts-0040]
 source: "https://utensil.github.io/forest/uts-0040/"
 ---

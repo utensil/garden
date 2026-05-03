@@ -1,7 +1,7 @@
 ---
 title: "Utilize Julia"
 date: 2016-04-24
-tags: [interest]
+tags: [interest, lang]
 aliases: [uts-0100]
 source: "https://utensil.github.io/forest/uts-0100/"
 ---

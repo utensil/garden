@@ -1,7 +1,7 @@
 ---
 title: "Review algorithms"
 date: 2015-03-30
-tags: [interest]
+tags: [interest, math]
 aliases: [uts-0127]
 source: "https://utensil.github.io/forest/uts-0127/"
 ---

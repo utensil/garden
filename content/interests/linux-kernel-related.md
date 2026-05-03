@@ -1,7 +1,7 @@
 ---
 title: "Linux Kernel related"
 date: 2016-03-18
-tags: [interest]
+tags: [interest, linux]
 aliases: [uts-0106]
 source: "https://utensil.github.io/forest/uts-0106/"
 ---

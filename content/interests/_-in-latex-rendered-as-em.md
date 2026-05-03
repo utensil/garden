@@ -1,7 +1,7 @@
 ---
 title: "_ in LaTeX rendered as em"
 date: 2015-04-09
-tags: [interest]
+tags: [interest, typst, kb]
 aliases: [uts-0120]
 source: "https://utensil.github.io/forest/uts-0120/"
 ---

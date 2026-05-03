@@ -1,7 +1,7 @@
 ---
 title: "Digest \"Readings in Databases\""
 date: 2014-08-29
-tags: [interest]
+tags: [interest, disect]
 aliases: [uts-0156]
 source: "https://utensil.github.io/forest/uts-0156/"
 ---

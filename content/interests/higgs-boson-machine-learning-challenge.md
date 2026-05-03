@@ -1,7 +1,7 @@
 ---
 title: "Higgs Boson Machine Learning Challenge"
 date: 2014-08-11
-tags: [interest]
+tags: [interest, lm, ph]
 aliases: [uts-0163]
 source: "https://utensil.github.io/forest/uts-0163/"
 ---

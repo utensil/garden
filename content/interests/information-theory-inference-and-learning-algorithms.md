@@ -1,7 +1,7 @@
 ---
 title: "Information Theory, Inference, and Learning Algorithms"
 date: 2014-08-12
-tags: [interest]
+tags: [interest, math, lm]
 aliases: [uts-0162]
 source: "https://utensil.github.io/forest/uts-0162/"
 ---

@@ -1,7 +1,7 @@
 ---
 title: "Investigate Netflix/SimianArmy"
 date: 2016-09-06
-tags: [interest]
+tags: [interest, chaos]
 aliases: [uts-0060]
 source: "https://utensil.github.io/forest/uts-0060/"
 ---

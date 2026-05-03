@@ -1,7 +1,7 @@
 ---
 title: "Collect good Visual Programming Languages"
 date: 2016-06-16
-tags: [interest]
+tags: [interest, lang]
 aliases: [uts-0072]
 source: "https://utensil.github.io/forest/uts-0072/"
 ---

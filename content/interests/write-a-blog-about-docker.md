@@ -1,7 +1,7 @@
 ---
 title: "Write a blog about docker"
 date: 2016-11-29
-tags: [interest]
+tags: [interest, selfhost]
 aliases: [uts-0055]
 source: "https://utensil.github.io/forest/uts-0055/"
 ---

@@ -1,7 +1,7 @@
 ---
 title: "Select fonts for editors"
 date: 2016-05-17
-tags: [interest]
+tags: [interest, devtools]
 aliases: [uts-0088]
 source: "https://utensil.github.io/forest/uts-0088/"
 ---

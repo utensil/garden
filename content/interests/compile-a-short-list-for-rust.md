@@ -1,7 +1,7 @@
 ---
 title: "Compile a short list for Rust Introduction"
 date: 2018-08-18
-tags: [interest]
+tags: [interest, rust, lang]
 aliases: [uts-0046]
 source: "https://utensil.github.io/forest/uts-0046/"
 ---

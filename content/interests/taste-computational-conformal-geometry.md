@@ -1,7 +1,7 @@
 ---
 title: "Taste Computational Conformal Geometry"
 date: 2016-05-28
-tags: [interest]
+tags: [interest, math, cg]
 aliases: [uts-0080]
 source: "https://utensil.github.io/forest/uts-0080/"
 ---

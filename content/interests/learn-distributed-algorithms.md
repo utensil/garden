@@ -1,7 +1,7 @@
 ---
 title: "Learn Distributed Algorithms"
 date: 2015-03-04
-tags: [interest]
+tags: [interest, formal]
 aliases: [uts-0134]
 source: "https://utensil.github.io/forest/uts-0134/"
 ---

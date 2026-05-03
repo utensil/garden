@@ -1,7 +1,7 @@
 ---
 title: "Write C++ backend server guide"
 date: 2016-04-15
-tags: [interest]
+tags: [interest, linux]
 aliases: [uts-0101]
 source: "https://utensil.github.io/forest/uts-0101/"
 ---

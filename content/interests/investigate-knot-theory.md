@@ -1,7 +1,7 @@
 ---
 title: "Investigate Knot Theory"
 date: 2024-02-04
-tags: [interest]
+tags: [interest, math]
 aliases: [uts-0033]
 source: "https://utensil.github.io/forest/uts-0033/"
 ---

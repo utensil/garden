@@ -1,7 +1,7 @@
 ---
 title: "Investigate certik/theoretical-physics"
 date: 2014-09-26
-tags: [interest]
+tags: [interest, ph]
 aliases: [uts-0147]
 source: "https://utensil.github.io/forest/uts-0147/"
 ---
