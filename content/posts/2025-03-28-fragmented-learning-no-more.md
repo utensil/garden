@@ -4,6 +4,7 @@ date: 2025-03-28
 tags:
   - essay
   - post
+  - kb
 aliases: [uts-0167]
 source: "https://utensil.github.io/forest/uts-0167/"
 external: "https://utensil.bearblog.dev/frag/"
