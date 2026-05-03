@@ -1,7 +1,11 @@
 ---
 title: Trying Zig's self-hosted x86 backend on Apple Silicon
 date: 2025-06-12
-tag: post
+tags:
+  - post
+  - zig
+  - devtools
+  - tui
 aliases: [uts-016K]
 source: "https://utensil.github.io/forest/uts-016K/"
 external: "https://utensil.bearblog.dev/zig-self-hosted-backend/"
