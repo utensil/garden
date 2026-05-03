@@ -2,9 +2,8 @@
 title: My setup with 4 screens and 2 Macs
 date: 2025-04-29
 tags:
-  - tech
-  - notes
   - draft
+  - devtools
 aliases: [uts-016B]
 source: "https://utensil.github.io/forest/uts-016B/"
 ---
