@@ -2,8 +2,9 @@
 title: 4 bugs caught me off guard recently
 date: 2025-04-07
 tags:
-  - math
   - post
+  - disect
+  - linux
 aliases: [uts-016A]
 source: "https://utensil.github.io/forest/uts-016A/"
 external: "https://utensil.bearblog.dev/bugs/"
