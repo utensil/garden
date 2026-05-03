@@ -1,7 +1,7 @@
 ---
 title: "Collect starred projects from Google Code"
 date: 2015-03-13
-tags: [interest, devtools]
+tags: [interest, tooling]
 aliases: [uts-0132]
 source: "https://utensil.github.io/forest/uts-0132/"
 ---

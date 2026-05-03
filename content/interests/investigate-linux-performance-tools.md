@@ -1,7 +1,7 @@
 ---
 title: "Investigate Linux performance tools"
 date: 2014-08-30
-tags: [interest, linux, devtools]
+tags: [interest, linux, tooling]
 aliases: [uts-0155]
 source: "https://utensil.github.io/forest/uts-0155/"
 ---

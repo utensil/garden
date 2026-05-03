@@ -1,7 +1,7 @@
 ---
 title: "Investigate tools used by neovim"
 date: 2014-09-10
-tags: [interest, devtools]
+tags: [interest, tui]
 aliases: [uts-0153]
 source: "https://utensil.github.io/forest/uts-0153/"
 ---

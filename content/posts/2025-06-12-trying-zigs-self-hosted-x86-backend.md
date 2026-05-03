@@ -4,7 +4,7 @@ date: 2025-06-12
 tags:
   - post
   - zig
-  - devtools
+  - tooling
   - tui
 aliases: [uts-016K]
 source: "https://utensil.github.io/forest/uts-016K/"

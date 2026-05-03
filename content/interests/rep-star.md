@@ -1,7 +1,7 @@
 ---
 title: "Rep Star"
 date: 2015-04-22
-tags: [interest, devtools]
+tags: [interest, tooling]
 aliases: [uts-0114]
 source: "https://utensil.github.io/forest/uts-0114/"
 ---

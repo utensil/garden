@@ -1,7 +1,7 @@
 ---
 title: "Find a nice theme to use with IDEA"
 date: 2014-11-12
-tags: [interest, devtools]
+tags: [interest, tooling]
 aliases: [uts-0143]
 source: "https://utensil.github.io/forest/uts-0143/"
 ---

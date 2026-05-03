@@ -1,7 +1,7 @@
 ---
 title: "Gather my frequently used git commands"
 date: 2016-05-11
-tags: [interest, devtools]
+tags: [interest, tooling]
 aliases: [uts-0092]
 source: "https://utensil.github.io/forest/uts-0092/"
 ---
