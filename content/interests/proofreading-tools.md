@@ -1,7 +1,7 @@
 ---
 title: "Proofreading tools"
 date: 2016-05-11
-tags: [interest, lang, devtools]
+tags: [interest, lang, tooling]
 aliases: [uts-0090]
 source: "https://utensil.github.io/forest/uts-0090/"
 ---

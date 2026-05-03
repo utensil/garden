@@ -1,7 +1,7 @@
 ---
 title: "Presentation about js ecosystem based on kuitos/kuitos.github.io/issues/32"
 date: 2015-12-29
-tags: [interest, webdev, essay]
+tags: [interest, web, essay]
 aliases: [uts-0107]
 source: "https://utensil.github.io/forest/uts-0107/"
 ---
