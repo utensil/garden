@@ -2,9 +2,10 @@
 title: Using Zig to build more
 date: 2025-07-18
 tags:
-  - tech
-  - notes
   - draft
+  - zig
+  - py
+  - rust
 aliases: [uts-016O]
 source: "https://utensil.github.io/forest/uts-016O/"
 ---
