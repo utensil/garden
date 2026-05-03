@@ -2,9 +2,9 @@
 title: How to run perf in a colima container
 date: 2025-06-15
 tags:
-  - tech
-  - notes
   - draft
+  - linux
+  - tui
 aliases: [uts-016L]
 source: "https://utensil.github.io/forest/uts-016L/"
 ---
