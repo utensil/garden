@@ -2,9 +2,9 @@
 title: Distributing my binaries
 date: 2025-07-18
 tags:
-  - tech
-  - notes
   - draft
+  - devtools
+  - tui
 aliases: [uts-016P]
 source: "https://utensil.github.io/forest/uts-016P/"
 ---
