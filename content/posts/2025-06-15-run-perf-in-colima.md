@@ -1,0 +1,85 @@
+---
+title: How to run perf in a colima container
+date: 2025-06-15
+tags:
+  - tech
+  - notes
+  - draft
+aliases: [uts-016L]
+source: "https://utensil.github.io/forest/uts-016L/"
+---
+
+Just to note down that it's not straightforward to get perf working.
+
+Here's what worked finally:
+
+First, the container needs to be started with proper capabilities:
+
+```bash
+docker run --rm -it --platform linux/amd64 --cap-add PERFMON ubuntu:jammy bash
+```
+
+Secondly, some flags need to be set from the VM:
+
+```bash
+# this would start a shell in the VM, outside of containers
+colima ssh
+
+# don't know why, sudo doesn't work, but it works in a root shell
+# -1 or 2 both work
+sudo bash -c 'echo -1 > /proc/sys/kernel/perf_event_paranoid'
+```
+
+Lastly, install perf in the container:
+
+```bash
+apt install -y linux-tools-$(uname -r) linux-cloud-tools-$(uname -r)
+```
+
+Then the following works:
+
+```bash
+perf record -g echo 1
+perf report -g graph,0.5,caller
+```
+
+Note also that you can't pass `"echo 1"` because perf will failed to find a file named "echo 1".
+
+Learned this while working on [[uts-016K]] and before submitting [this issue](https://github.com/andrewrk/poop/issues/17#issuecomment-2973619089) about unable to run `poop` in `colima` containers.
+
+Follow-up:
+
+It's important to check whether certain perf counters actually work:
+
+```
+sleep 10 &
+perf stat -p $! -e "cpu-cycles,instructions,cache-references,cache-misses,branch-misses"
+```
+
+On a machine that supports corresponding counters, it should give something like:
+
+```
+ Performance counter stats for process id '101011':
+
+            511488      cpu-cycles                                                  
+            280194      instructions              #    0.55  insn per cycle         
+             16193      cache-references                                            
+              6161      cache-misses              #   38.047 % of all cache refs    
+              8730      branch-misses                                               
+
+      10.009515156 seconds time elapsed
+```
+
+On an unsupported machine, the output would be like:
+
+```
+ Performance counter stats for process id '552':
+
+   <not supported>      cpu-cycles
+   <not supported>      instructions
+   <not supported>      cache-references
+   <not supported>      cache-misses
+   <not supported>      branch-misses
+
+       6.491105847 seconds time elapsed
+```
