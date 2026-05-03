@@ -1,7 +1,11 @@
 ---
 title: some HF papers worth skimming
 date: 2025-05-25
-tag: draft
+tags:
+  - draft
+  - lm
+  - mm
+  - agent
 aliases: [uts-016E]
 source: "https://utensil.github.io/forest/uts-016E/"
 ---
