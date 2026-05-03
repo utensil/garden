@@ -2,11 +2,11 @@
 title: What's next for LLMs?
 date: 2025-05-16
 tags:
-  - tech
-  - notes
-  - draft
   - essay
   - post
+  - lm
+  - agent
+  - mm
 aliases: [uts-016C]
 source: "https://utensil.github.io/forest/uts-016C/"
 external: "https://utensil.bearblog.dev/llm-next/"
