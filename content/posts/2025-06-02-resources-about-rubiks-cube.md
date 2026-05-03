@@ -2,9 +2,8 @@
 title: Resources about Rubik's Cube
 date: 2025-06-02
 tags:
-  - tech
-  - notes
   - draft
+  - math
 aliases: [uts-016J]
 source: "https://utensil.github.io/forest/uts-016J/"
 ---
