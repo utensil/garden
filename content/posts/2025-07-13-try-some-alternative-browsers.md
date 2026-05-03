@@ -2,9 +2,8 @@
 title: Try some alternative browsers
 date: 2025-07-13
 tags:
-  - tech
-  - notes
   - draft
+  - openweb
 aliases: [uts-016N]
 source: "https://utensil.github.io/forest/uts-016N/"
 ---
