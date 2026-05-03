@@ -1,0 +1,131 @@
+---
+title: some HF papers worth skimming
+date: 2025-05-25
+tag: draft
+aliases: [uts-016E]
+source: "https://utensil.github.io/forest/uts-016E/"
+---
+
+- multimodal, diffusion
+    - [Scaling Diffusion Transformers Efficiently via μP](https://huggingface.co/papers/2505.15270)
+        - establish μP as a principled and efficient scaling strategy for diffusion Transformers
+        - with appendix on Theoretical Background of μP
+    - [Neurosymbolic Diffusion Models](https://huggingface.co/papers/2505.13138)
+        - the first method to integrate masked diffusion models as the neural network extractor in neurosymbolic predictors
+        - with a very long appendix on math background
+    - [Diffusion vs. Autoregressive Language Models: A Text Embedding Perspective](https://huggingface.co/papers/2505.15045)
+        - propose adopting diffusion language models for text embeddings, motivated by their inherent bidirectional architecture and recent success in matching or surpassing LLMs especially on reasoning tasks
+        - focus on [Dream 7b: Introducing dream 7b, the most powerful open diffusion large language model to date](https://hkunlp.github.io/blog/2025/dream/)
+            - consistently outperforms existing diffusion language models by a large margin
+            - matches or exceeds top-tier Autoregressive (AR) language models of similar size on the general, math, and coding abilities
+            - demonstrates strong planning ability and inference flexibility that naturally benefits from the diffusion modeling
+            - virtually all leading LLMs relying on this same sequential left-to-right architecture
+            - Discrete diffusion models (DMs) have gained attention as a promising alternative for sequence generation since their introduction to the text domain, which dynamically refine the full sequence in parallel starting from a fully noised state
+    - [MMaDA: Multimodal Large Diffusion Language Models](https://huggingface.co/papers/2505.15809)
+        - unified diffusion architecture
+        - superior performance across diverse domains such as textual reasoning, multimodal understanding, and text-to-image generation
+        - rich and impressive examples
+        - with appendix on Preliminaries of Discrete Diffusion, PPO and GRPO
+    - [LaViDa: A Large Diffusion Language Model for Multimodal Understanding](https://huggingface.co/papers/2505.16839)
+        - Large Vision-Language Diffusion Model with Masking
+        - follows a similar design to common AR VLMs like LLaVa
+    - [GRIT: Teaching MLLMs to Think with Images](https://huggingface.co/papers/2505.15879)
+        - generate visually grounded reasoning chains by interleaving natural language with explicit bounding box coordinates referencing relevant image regions
+    - [Dimple: Discrete Diffusion Multimodal Large Language Model with Parallel Decoding](https://huggingface.co/papers/2505.16990)
+        - trained using a novel two-phase paradigm–Autoregressive-then-Diffusion
+    - [dKV-Cache: The Cache for Diffusion Language Models](https://huggingface.co/papers/2505.15781)
+        - diffusion language models have long been constrained by slow inference
+        - motivated by the observation that different tokens have distinct representation dynamics throughout the diffusion process
+        - propose a delayed and conditioned caching strategy for key and value states
+    - [Understanding Generative AI Capabilities in Everyday Image Editing Tasks](https://huggingface.co/papers/2505.16181)
+        - analyzing 83k requests with their associated 305k edits from the recent 12 years on the `/r/PhotoshopRequest` Reddit community
+        - new dataset: [PSR](https://huggingface.co/datasets/PSRDataset/PSR)
+    - [Hunyuan-Game: Industrial-grade Intelligent Game Creation Model](https://huggingface.co/papers/2505.14135)
+        - lots of examples of game creation
+- efficiency
+    - [Scaling Law for Quantization-Aware Training](https://huggingface.co/papers/2505.14302)
+        - a comprehensive scaling law for 4-bit QAT of LLMs, integrating model size, training dataset size, and quantization granularity
+        - previous methods do not account for quantization granularity G
+        - weight and activation quantization errors tend to contribute almost equally to the total error
+    - [Fine-tuning Quantized Neural Networks with Zeroth-order Optimization](https://huggingface.co/papers/2505.13430)
+        - push the limits of memory-efficient training by minimizing memory usage on model weights, gradients, and optimizer states, within a unified framework
+        - perturbs the continuous quantization scale for gradient estimation and uses a directional derivative clipping method to stabilize training
+        - Zeroth-order optimization (ZO) methods are often used in cases where gradients and higher-order derivatives of the objective cannot be directly computed or are unreliable
+        - successfully fine-tune Stable Diffusion 3.5 Large quantized by BitsAndBytes on stylized images using a single Nvidia RTX 4090 24GB GPU
+    - [A Token is Worth over 1,000 Tokens: Efficient Knowledge Distillation through Low-Rank Clone](https://huggingface.co/papers/2505.12781)
+        - trains a set of low-rank projection matrices that jointly enable soft pruning by compressing teacher weights, and activation clone by aligning student activations, including FFN signals, with those of the teacher
+        - remarkable distillation efficiency, achieving superior performance with more than 1000× fewer training tokens
+        - LRC w/o FFN produces a substantial performance degradation that persists throughout training, further confirming the critical importance of FFN activations
+        - LRC’s projection-based alignment is not only sufficient for effective knowledge transfer but also more efficient and stable
+- agents, reasoning, RL
+    - [NovelSeek: When Agent Becomes the Scientist -- Building Closed-Loop System from Hypothesis to Verification](https://huggingface.co/papers/2505.16938)
+    - [Reinforcement Learning Finetunes Small Subnetworks in Large Language Models](https://huggingface.co/papers/2505.11711)
+    - [Tool-Star: Empowering LLM-Brained Multi-Tool Reasoner via Reinforcement Learning](https://huggingface.co/papers/2505.16410)
+    - [AceReason-Nemotron: Advancing Math and Code Reasoning through Reinforcement Learning](https://huggingface.co/papers/2505.16400)
+    - [Training-Free Reasoning and Reflection in MLLMs](https://huggingface.co/papers/2505.16151)
+    - [Date Fragments: A Hidden Bottleneck of Tokenization for Temporal Reasoning](https://huggingface.co/papers/2505.16088)
+    - [RLVR-World: Training World Models with Reinforcement Learning](https://huggingface.co/papers/2505.13934)
+    - [SPhyR: Spatial-Physical Reasoning Benchmark on Material Distribution](https://huggingface.co/papers/2505.16048)
+    - [Risk-Averse Reinforcement Learning with Itakura-Saito Loss](https://huggingface.co/papers/2505.16925)
+- safety
+    - [Phare: A Safety Probe for Large Language Models](https://huggingface.co/papers/2505.11365)
+    - [Audio Jailbreak: An Open Comprehensive Benchmark for Jailbreaking Large Audio-Language Models](https://huggingface.co/papers/2505.15406)
+    - [Are Vision-Language Models Safe in the Wild? A Meme-Based Benchmark Study](https://huggingface.co/papers/2505.15389)
+- application
+    - [Steering Large Language Models for Machine Translation Personalization](https://huggingface.co/papers/2505.16612)
+    - [This Time is Different: An Observability Perspective on Time Series Foundation Models](https://huggingface.co/papers/2505.14766)
+    - [Prior Prompt Engineering for Reinforcement Fine-Tuning](https://huggingface.co/papers/2505.14157)
+    - [Using Large Language Models for Commit Message Generation: A Preliminary Study](https://arxiv.org/abs/2401.05926)
+    - [The Distracting Effect: Understanding Irrelevant Passages in RAG](https://huggingface.co/papers/2505.06914)
+- more
+    - [Distilling LLM Agent into Small Models with Retrieval and Code Tools](https://huggingface.co/papers/2505.17612)
+    - [CLEVER: A Curated Benchmark for Formally Verified Code Generation](https://arxiv.org/abs/2505.13938)
+    - [DiSA: Diffusion Step Annealing in Autoregressive Image Generation](https://huggingface.co/papers/2505.20297)
+    - [Capability-Based Scaling Laws for LLM Red-Teaming](https://huggingface.co/papers/2505.20162)
+    - [FinTagging: An LLM-ready Benchmark for Extracting and Structuring Financial Information](https://huggingface.co/papers/2505.20650)
+    - [GSO: Challenging Software Optimization Tasks for Evaluating SWE-Agents](https://arxiv.org/abs/2505.23671)
+    - watch [The 3D Gaussian Splatting Adventure: Past, Present, Future](https://www.youtube.com/watch?v=DjOqkVIlEGY)
+    - [DCM: Dual-Expert Consistency Model for Efficient and High-Quality Video Generation](http://arxiv.org/pdf/2506.03123v1)
+    - [GUI-Actor: Coordinate-Free Visual Grounding for GUI Agents](http://arxiv.org/pdf/2506.03143v1)
+    - [Agentic Neural Networks: Self-Evolving Multi-Agent Systems via Textual Backpropagation](http://arxiv.org/pdf/2506.09046v1)
+    - [Large Language Models Often Know When They Are Being Evaluated](https://arxiv.org/abs/2505.23836)
+    - [Tiny-diffusion: A minimal implementation of probabilistic diffusion models](https://github.com/tanelp/tiny-diffusion)
+    - [AgentDistill: Training-Free Agent Distillation with Generalizable MCP Boxes](http://arxiv.org/pdf/2506.14728v1)
+    - [Time Series Forecasting with Graph Transformers](https://kumo.ai/research/time-series-forecasting/)
+    - [The Effect of State Representation on LLM Agent Behavior in Dynamic Routing Games](http://arxiv.org/pdf/2506.15624v1)
+    - [Compiling LLMs into a MegaKernel: A path to low-latency inference](https://zhihaojia.medium.com/compiling-llms-into-a-megakernel-a-path-to-low-latency-inference-cf7840913c17)
+    - [Magenta RealTime: An Open-Weights Live Music Model](https://simonwillison.net/2025/Jun/20/magenta-realtime/#atom-everything)
+    - [Audit & Repair: An Agentic Framework for Consistent Story Visualization in Text-to-Image Diffusion Models](http://arxiv.org/pdf/2506.18900v1)
+    - [Let Your Video Listen to Your Music!](http://arxiv.org/pdf/2506.18881v1)
+    - [Vision as a Dialect: Unifying Visual Understanding and Generation via Text-Aligned Representations](http://arxiv.org/pdf/2506.18898v1)
+    - [Bridging Cinematic Principles and Generative AI for Automated Film Generation](https://arxiv.org/abs/2506.18899)
+    - [Show HN: PILF, The ultimate solution to catastrophic oblivion on AI models](https://github.com/dmf-archive/PILF)
+    - [Qwen VLo: From “Understanding” the World to “Depicting” It](https://qwenlm.github.io/blog/qwen-vlo/)
+    - [WorldVLA: Towards Autoregressive Action World Model](https://arxiv.org/abs/2506.21539) ([on HN](https://news.ycombinator.com/item?id=44417725))
+    - [Small language models are the future of agentic AI](https://arxiv.org/abs/2506.02153) ([on HN](https://news.ycombinator.com/item?id=44430311))
+    - [Overclocking LLM Reasoning: Monitoring and Controlling LLM Thinking Path Lengths](https://royeisen.github.io/OverclockingLLMReasoning-paper/) ([on HN](https://news.ycombinator.com/item?id=44480400))
+    - [Reinforcement Learning from Human Feedback (RLHF) in Notebooks](https://github.com/ash80/RLHF_in_notebooks)
+    - [LLMs should not replace therapists](https://arxiv.org/abs/2504.18412) ([on HN](https://news.ycombinator.com/item?id=44484207))
+    - [Mercury: Ultra-fast language models based on diffusion](https://arxiv.org/abs/2506.17298) ([on HN](https://news.ycombinator.com/item?id=44489690))
+    - [Biomni: A General-Purpose Biomedical AI Agent](https://github.com/snap-stanford/Biomni) ([on HN](https://news.ycombinator.com/item?id=44513843))
+    - [Distributed AI Agents for Cognitive Underwater Robot Autonomy](http://arxiv.org/pdf/2507.23735v1)
+    - [GEPA: Reflective prompt evolution can outperform reinforcement learning](https://arxiviq.substack.com/p/gepa-reflective-prompt-evolution) ([on HN](https://news.ycombinator.com/item?id=44744331))
+    - [Hijacking multi-agent systems in your PajaMAS](https://blog.trailofbits.com/2025/07/31/hijacking-multi-agent-systems-in-your-pajamas/)
+    - [Core Safety Values for Provably Corrigible Agents](http://arxiv.org/pdf/2507.20964v1)
+    - [Flow Matching Policy Gradients](http://arxiv.org/pdf/2507.21053v1)
+    - [Fine-tuned small LLMs can beat large ones with programmatic data curation](https://www.tensorzero.com/blog/fine-tuned-small-llms-can-beat-large-ones-at-5-30x-lower-cost-with-programmatic-data-curation/) ([on HN](https://news.ycombinator.com/item?id=44787611))
+        - the chosen task is considered not challenging
+    - [Persona vectors: Monitoring and controlling character traits in language models](https://www.anthropic.com/research/persona-vectors) ([on HN](https://news.ycombinator.com/item?id=44777760))
+    - [Qwen-Image: Crafting with native text rendering](https://qwenlm.github.io/blog/qwen-image/) ([on HN](https://news.ycombinator.com/item?id=44787631))
+    - [Exploring Autonomous Agents: A Closer Look at Why They Fail When...](http://arxiv.org/abs/2508.13143v1)
+    - [Kimina-Prover: Applying Test-time RL Search on Large Formal Reasoning Models](https://huggingface.co/blog/AI-MO/kimina-prover)
+    - [Emergent Misalignment: Narrow finetuning can produce broadly misaligned LLMs](https://arxiv.org/abs/2502.17424) ([on HN](https://news.ycombinator.com/item?id=44554865))
+    - [Context Rot: How Increasing Input Tokens Impacts LLM Performance](https://research.trychroma.com/context-rot) ([on HN](https://news.ycombinator.com/item?id=44564248)) ([on lobste.rs](https://lobste.rs/s/untq6g))
+    - [All AI models might be the same](https://blog.jxmo.io/p/there-is-only-one-model) ([on HN](https://news.ycombinator.com/item?id=44595811))
+    - [LLM Economist: Large Population Models and Mechanism Design in Multi-Agent Generative Simulacra](http://arxiv.org/pdf/2507.15815v1)
+    - [Subliminal learning: Models transmit behaviors via hidden signals in data](https://alignment.anthropic.com/2025/subliminal-learning/) ([on HN](https://news.ycombinator.com/item?id=44650840))
+        - [Simon Willison | Subliminal Learning: Language Models Transmit Behavioral Traits via Hidden Signals in Data](https://simonwillison.net/2025/Jul/22/subliminal-learning/)
+    - [Flow Matching Meets Biology and Life Science: A Survey](http://arxiv.org/pdf/2507.17731v1)
+    - [Seed-Prover/SeedProver at main · ByteDance-Seed/Seed-Prover](https://github.com/ByteDance-Seed/Seed-Prover/tree/main/SeedProver)
+    - [Transformers Without Normalization](https://arxiv.org/abs/2503.10622) ([on HN](https://news.ycombinator.com/item?id=44671375))
+    - [Embedding-Aware Quantum-Classical SVMs for Scalable Quantum Machine Learning](https://arxiv.org/abs/2508.00024)
