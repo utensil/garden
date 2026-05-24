@@ -58,7 +58,7 @@ export default ((opts?: Partial<TagContentOptions>) => {
             <p>{content}</p>
           </article>
           <p>{i18n(cfg.locale).pages.tagContent.totalTags({ count: tags.length })}</p>
-          <div>
+          <div class="tag-cloud">
             {tags.sort((a, b) => tagItemMap.get(b)!.length - tagItemMap.get(a)!.length).map((tag) => {
               const pages = tagItemMap.get(tag)!
               const listProps = {

@@ -38,3 +38,32 @@ li.section-li {
     display: none;
   }
 }
+
+// all-tags index: let tags + counts flow horizontally and wrap to new lines,
+// forming a rectangular tag cloud instead of a vertical list.
+.tag-cloud {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.5rem 0.9rem;
+  margin-top: 1rem;
+
+  & > div {
+    margin: 0;
+  }
+
+  h2 {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: normal;
+  }
+
+  .tag-link {
+    white-space: nowrap;
+
+    & span {
+      opacity: 0.6;
+      font-size: 0.85em;
+    }
+  }
+}
