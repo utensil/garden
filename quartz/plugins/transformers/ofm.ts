@@ -22,7 +22,7 @@ import checkboxScript from "../../components/scripts/checkbox.inline"
 // @ts-ignore
 import mermaidScript from "../../components/scripts/mermaid.inline"
 import mermaidStyle from "../../components/styles/mermaid.inline.scss"
-import { FilePath, pathToRoot, slugTag, slugifyFilePath } from "../../util/path"
+import { FilePath, slugTag, slugifyFilePath } from "../../util/path"
 import { toHast } from "mdast-util-to-hast"
 import { toHtml } from "hast-util-to-html"
 import { capitalize } from "../../util/lang"
@@ -215,7 +215,6 @@ export const ObsidianFlavoredMarkdown: QuartzTransformerPlugin<Partial<Options>>
       plugins.push(() => {
         return (tree: Root, file) => {
           const replacements: [RegExp, string | ReplaceFunction][] = []
-          const base = pathToRoot(file.data.slug!)
 
           if (opts.wikilinks) {
             replacements.push([
@@ -350,7 +349,10 @@ export const ObsidianFlavoredMarkdown: QuartzTransformerPlugin<Partial<Options>>
 
                 return {
                   type: "link",
-                  url: base + `/tags/${tag}`,
+                  // vault-relative (no base prefix): CrawlLinks resolves this
+                  // once via pathToRoot. Pre-prefixing base here double-applied
+                  // the absolute base (→ /garden/garden/tags/...) after CrawlLinks.
+                  url: `tags/${tag}`,
                   data: {
                     hProperties: {
                       className: ["tag-link"],
