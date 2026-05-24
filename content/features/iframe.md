@@ -1,5 +1,6 @@
 ---
 title: Enhanced iframe
+date: 2025-07-20
 tag: features/component
 ---
 
@@ -153,3 +154,33 @@ plugins: {
   ],
 }
 ```
+
+## Implementation
+
+The feature was built up incrementally across several commits, and lives in
+three files:
+
+- `quartz/components/Iframe.tsx` (`43026e1`, `55f4893`, `06802a1`) — the
+  component. It resolves its source from the `src` option then the `iframe`
+  frontmatter key, merges `iframe-style` frontmatter with the `style` option
+  (option wins), and renders a `.iframe-container` div: a `.iframe-header` with
+  the URL and an "open in new tab" SVG link, followed by the `<iframe>`. Returns
+  `null` when no src is found, so it's safe to keep in a layout unconditionally.
+- `quartz/components/styles/iframe.scss` (`55f4893`, `a884551`, `c15266a`) — the
+  container/header/iframe styling, including the dark-mode `background-color:
+  transparent` no-flash fix.
+- `quartz/plugins/transformers/iframe-embed.ts` (`ac76ff1`, `f5a5a76`,
+  `c15266a`) — the `IframeEmbed` transformer that handles raw `<iframe>` tags in
+  markdown. It runs as an `htmlPlugin` (after `rehype-raw`), uses
+  `unist-util-visit` to find `iframe` elements, parses the inline `style` string
+  into a React style object, and **splits the properties**: layout/box
+  properties (`width`, `border*`, `margin*`, `boxShadow`) go to the container,
+  the rest (`height`, etc.) stay on the iframe. It then rewrites the node
+  in-place via `Object.assign(node, container)` and returns `SKIP` — the
+  in-place rewrite (rather than emitting separate nodes) is what fixed embeds
+  rendering in the wrong position (`f5a5a76`). Defaults: `height: 500px`,
+  container `width: 100%`, `loading: "lazy"`.
+
+The transformer depends on [[features/html-in-markdown|raw HTML being enabled in
+Obsidian markdown]] (`enableInHtmlEmbed: true`) so the `<iframe>` tags survive
+to the HTML stage.
