@@ -153,7 +153,27 @@ export function normalizeHastElement(rawEl: HastElement, curBase: FullSlug, newB
 }
 
 // resolve /a/b/c to ../..
+// Absolute base path (e.g. "/garden") for sub-path deploys, derived once from
+// the configured baseUrl via setBasePath(). Empty for root deploys.
+let basePath = ""
+
+export function setBasePath(baseUrl: string): void {
+  try {
+    const u = new URL(baseUrl.startsWith("http") ? baseUrl : `https://${baseUrl}`)
+    basePath = u.pathname.replace(/\/$/, "")
+  } catch {
+    basePath = ""
+  }
+}
+
 export function pathToRoot(slug: FullSlug): RelativeURL {
+  // On a sub-path deploy, return the absolute base so asset/link URLs don't
+  // depend on the page's trailing slash — some hosts (e.g. tangled's sites
+  // server) serve /foo without redirecting to /foo/, which breaks relative
+  // "../.." paths. Root deploys (empty basePath) keep the portable relative form.
+  if (basePath) {
+    return basePath as RelativeURL
+  }
   let rootPath = slug
     .split("/")
     .filter((x) => x !== "")
