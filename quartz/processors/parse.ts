@@ -7,7 +7,7 @@ import { Root as HTMLRoot } from "hast"
 import { MarkdownContent, ProcessedContent } from "../plugins/vfile"
 import { PerfTimer } from "../util/perf"
 import { read } from "to-vfile"
-import { FilePath, FullSlug, QUARTZ, slugifyFilePath } from "../util/path"
+import { FilePath, QUARTZ, slugifyFilePath } from "../util/path"
 import path from "path"
 import workerpool, { Promise as WorkerPromise } from "workerpool"
 import { QuartzLogger } from "../util/log"
@@ -103,13 +103,6 @@ export function createFileParser(ctx: BuildCtx, fps: FilePath[]) {
         file.data.filePath = file.path as FilePath
         file.data.relativePath = path.posix.relative(argv.directory, file.path) as FilePath
         file.data.slug = slugifyFilePath(file.data.relativePath)
-        // Emit folder-style URLs (foo/index.html) so hosts that resolve only
-        // /foo -> /foo/index.html (e.g. tangled's sites server, which never
-        // tries /foo.html) serve clean URLs. Mirrors how Quartz's own folder
-        // pages are slugged; downstream emit + pathToRoot handle /index slugs.
-        if (file.data.slug !== "index" && !file.data.slug.endsWith("/index")) {
-          file.data.slug = `${file.data.slug}/index` as FullSlug
-        }
 
         const ast = processor.parse(file)
         const newAst = await processor.run(ast, file)
