@@ -7,6 +7,7 @@ import {
   stripSlashes,
   simplifySlug,
   splitAnchor,
+  stripBasePath,
   transformLink,
 } from "../../util/path"
 import path from "path"
@@ -117,7 +118,9 @@ export const CrawlLinks: QuartzTransformerPlugin<Partial<Options>> = (userOpts) 
                   }
 
                   // need to decodeURIComponent here as WHATWG URL percent-encodes everything
-                  const full = decodeURIComponent(stripSlashes(destCanonical, true)) as FullSlug
+                  const full = stripBasePath(
+                    decodeURIComponent(stripSlashes(destCanonical, true)),
+                  ) as FullSlug
                   const simple = simplifySlug(full)
                   outgoing.add(simple)
                   node.properties["data-slug"] = full

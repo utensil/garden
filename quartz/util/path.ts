@@ -166,6 +166,16 @@ export function setBasePath(baseUrl: string): void {
   }
 }
 
+// Remove the absolute base prefix (e.g. "garden/") from a vault slug. Needed
+// because pathToRoot() now returns the absolute base, so slugs derived from
+// transformed (absolute) hrefs would otherwise carry the base — which would
+// corrupt the link index (breaking backlinks + the graph).
+export function stripBasePath(slug: string): string {
+  if (!basePath) return slug
+  const prefix = basePath.slice(1) + "/"
+  return slug.startsWith(prefix) ? slug.slice(prefix.length) : slug
+}
+
 export function pathToRoot(slug: FullSlug): RelativeURL {
   // On a sub-path deploy, return the absolute base so asset/link URLs don't
   // depend on the page's trailing slash — some hosts (e.g. tangled's sites
