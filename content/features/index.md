@@ -16,7 +16,7 @@ Notes on the custom features this Quartz fork adds, grouped by nature.
 ## UI
 
 - [[features/search|Search as a button]] — the search trigger is a compact icon button instead of a full input bar.
-- [[features/reader-mode|Reader mode by default]] — a dimmed-icon hint for reader mode (which the fork experimented with enabling by default).
+- [[features/reader-mode|Reader mode]] — opt-in focus view on notes/posts that hides the side panels, with a dimmed-icon active hint (default-on was tried then reverted).
 - [[features/layout|Layout & spacing tweaks]] — tighter top spacing, regrouped sidebar controls, ToC/explorer placement, and code-block padding.
 
 ## Theme
