@@ -34,11 +34,13 @@ export const sharedPageComponents: SharedLayout = {
     })
   ],
   footer: Component.Footer({
-    links: {
-      // GitHub: "https://github.com/jackyzha0/quartz",
-      Source: "https://github.com/utensil/quartz",
-      // "Discord Community": "https://discord.gg/cRFFHYye7t",
+    // Deployment-aware: the Source link points at GitHub on github.io and at
+    // tangled on tngl.sh (switched client-side by scripts/deployment.inline.ts).
+    source: {
+      github: "https://github.com/utensil/garden",
+      tangled: "https://tangled.org/utensil.tngl.sh/garden",
     },
+    links: {},
   }),
 }
 
