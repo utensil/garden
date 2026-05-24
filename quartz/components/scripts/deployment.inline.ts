@@ -4,7 +4,8 @@
 //   <a   data-href-github="…" data-href-tangled="…">
 //   <iframe data-src-github="…" data-src-tangled="…">
 function platformFor(host: string): "tangled" | "github" {
-  return host.endsWith("tngl.sh") ? "tangled" : "github"
+  // tangled is migrating tngl.sh → tngl.org; match both.
+  return host.endsWith("tngl.sh") || host.endsWith("tngl.org") ? "tangled" : "github"
 }
 
 function applyDeployment() {

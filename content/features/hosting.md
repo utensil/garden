@@ -6,10 +6,12 @@ tag: features/hosting
 
 ## Feature
 
-The garden is mirrored to [tangled.sh](https://tangled.sh) and served at
-`utensil.tngl.sh/garden` by tangled's Cloudflare-worker "sites" service, in
-addition to GitHub Pages. tangled's host has two quirks that broke a stock
-Quartz build:
+The garden's source is hosted on **both** GitHub and
+[tangled](https://tangled.org) (`tangled.org/utensil.tngl.sh/garden`) — two equal
+source repos, each deployed to its own URL: `utensil.github.io/garden` (GitHub
+Pages) and `utensil.tngl.sh/garden` (tangled's Cloudflare-worker "sites" service;
+tangled is migrating `.sh`→`.org`, with `.sh` redirecting). tangled's host has
+two quirks that broke a stock Quartz build:
 
 - It resolves `/foo` → `/foo/index.html` only — it never tries `/foo.html`.
 - It serves the no-trailing-slash URL (`/foo`) directly, **without** redirecting

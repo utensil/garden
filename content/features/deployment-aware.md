@@ -9,8 +9,9 @@ tag: features/hosting
 This garden is published as one static build to **two** hosts — GitHub Pages
 (`utensil.github.io/garden`) and tangled (`utensil.tngl.sh/garden`). Some links
 should point at the host you're actually on rather than a fixed one. The footer
-**Source** link is the first user of this: it goes to the GitHub repo on
-`github.io` and to the tangled repo on `tngl.sh`.
+**Source** link is the first user of this: when served from `github.io` it
+points at the GitHub repo, and from `tngl.sh` at the tangled repo
+(`tangled.org/…`).
 
 Because the same files are served from both hosts, the choice can't be made at
 build time — it's decided in the browser from the current hostname.
@@ -37,7 +38,7 @@ you can target from CSS.
 
 - `quartz/components/scripts/deployment.inline.ts` — runs on load and on every
   SPA `nav`: reads `window.location.hostname`, picks `tangled` for `*.tngl.sh`
-  else `github`, sets `data-platform` on `<html>`, then rewrites every
+  or `*.tngl.org` else `github`, sets `data-platform` on `<html>`, then rewrites every
   `a[data-href-github]`'s `href` and every `iframe[data-src-github]`'s `src` to
   the matching `data-*-{platform}` value.
 - `quartz/components/Footer.tsx` — renders the Source link with both URLs
