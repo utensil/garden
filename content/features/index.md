@@ -29,7 +29,7 @@ Notes on the custom features this Quartz fork adds, grouped by nature.
 
 ## Tooling
 
-- [[features/tooling|`just` workflow]] — `just dev`/`build`/`sync`/`new` recipes for live preview, building, syncing, and creating jj-stamped notes.
+- [[features/tooling|just workflow]] — `just dev`/`build`/`sync`/`new` recipes for live preview, building, syncing, and creating jj-stamped notes.
 
 ## Hosting
 
