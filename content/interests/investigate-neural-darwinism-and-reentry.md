@@ -1,7 +1,7 @@
 ---
 title: "Investigate Neural Darwinism and Reentry"
 date: 2014-10-22
-tags: [interest, bio]
+tags: [interest, sci]
 aliases: [uts-0146]
 source: "https://utensil.github.io/forest/uts-0146/"
 ---
